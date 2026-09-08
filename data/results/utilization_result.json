@@ -1,0 +1,124 @@
+{
+ "open_idle": 85.60799999999999,
+ "gen": 128,
+ "results": [
+  {
+   "repo": "Qwen/Qwen2.5-3B-Instruct",
+   "params_b": 3.0,
+   "gen_tokens": 128,
+   "idle_w": 85.65691666666666,
+   "drift_w": 6.257916666666674,
+   "dirty": true,
+   "rows": [
+    {
+     "batch": 1,
+     "dur_s": 3.0608548323313394,
+     "n_measurable": 3,
+     "j_batch": 192.76629454929966,
+     "j_req": 192.76629454929966,
+     "req_per_s": 0.3267061179893779,
+     "tok_per_s": 41.81838310264037,
+     "vram_gib": 6.4947190284729
+    },
+    {
+     "batch": 2,
+     "dur_s": 3.186534325281779,
+     "n_measurable": 3,
+     "j_batch": 184.51342105995946,
+     "j_req": 92.25671052997973,
+     "req_per_s": 0.6276411285239001,
+     "tok_per_s": 80.33806445105921,
+     "vram_gib": 6.566373825073242
+    },
+    {
+     "batch": 4,
+     "dur_s": 3.230222781499227,
+     "n_measurable": 3,
+     "j_batch": 185.35883119631475,
+     "j_req": 46.33970779907869,
+     "req_per_s": 1.2383046837851537,
+     "tok_per_s": 158.50299952449967,
+     "vram_gib": 6.712386131286621
+    },
+    {
+     "batch": 8,
+     "dur_s": 3.2431782881418862,
+     "n_measurable": 3,
+     "j_batch": 244.39605882445315,
+     "j_req": 30.549507353056644,
+     "req_per_s": 2.466716069619299,
+     "tok_per_s": 315.7396569112703,
+     "vram_gib": 6.99995231628418
+    },
+    {
+     "batch": 16,
+     "dur_s": 3.262317180633545,
+     "n_measurable": 3,
+     "j_batch": 267.03519285420583,
+     "j_req": 16.689699553387864,
+     "req_per_s": 4.904489390235436,
+     "tok_per_s": 627.7746419501358,
+     "vram_gib": 7.588428497314453
+    },
+    {
+     "batch": 32,
+     "dur_s": 3.3795719941457114,
+     "n_measurable": 3,
+     "j_batch": 367.39289881619476,
+     "j_req": 11.481028088006086,
+     "req_per_s": 9.46865462710433,
+     "tok_per_s": 1211.9877922693543,
+     "vram_gib": 8.757255554199219
+    },
+    {
+     "batch": 64,
+     "dur_s": 4.798432906468709,
+     "n_measurable": 3,
+     "j_batch": 944.3381309917435,
+     "j_req": 14.755283296745992,
+     "req_per_s": 13.337687792554602,
+     "tok_per_s": 1707.224037446989,
+     "vram_gib": 19.373987197875977
+    }
+   ],
+   "best_batch": 32,
+   "j_req_best": 11.481028088006086,
+   "batch_saving": 16.789985450055408,
+   "daily_idle_kwh": 2.0557659999999998,
+   "rate_curve": [
+    {
+     "req_per_day": 100,
+     "j_per_req_total": 74019.057028088,
+     "idle_share": 0.9998448909166237
+    },
+    {
+     "req_per_day": 1000,
+     "j_per_req_total": 7412.238628088006,
+     "idle_share": 0.9984510714422361
+    },
+    {
+     "req_per_day": 10000,
+     "j_per_req_total": 751.556788088006,
+     "idle_share": 0.9847236718901651
+    },
+    {
+     "req_per_day": 100000,
+     "j_per_req_total": 85.48860408800608,
+     "idle_share": 0.8657010696280997
+    },
+    {
+     "req_per_day": 1000000,
+     "j_per_req_total": 18.881785688006087,
+     "idle_share": 0.39195220845563566
+    }
+   ]
+  },
+  {
+   "repo": "Qwen/Qwen2.5-14B-Instruct",
+   "params_b": 14.0,
+   "gen_tokens": 128,
+   "idle_w": 88.88491666666667,
+   "error": "OutOfMemoryError: CUDA out of memory. Tried to allocate 8.27 GiB. GPU 0 has a total capacity of 44.39 GiB of which 7.04 GiB is free. Process 3046832 has 432.89 MiB memory in use. Including non-PyTorch memory, this process has 36.90 GiB memory in use. Of the allocated memory 35.36 GiB is allocated by PyTorch, and 1.04 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+  }
+ ]
+}

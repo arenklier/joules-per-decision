@@ -1,0 +1,40 @@
+120 tasks, cot cap 1024, models: ['Qwen/Qwen2.5-14B-Instruct', 'Qwen/Qwen2.5-1.5B-Instruct']
+
+=== Qwen/Qwen2.5-14B-Instruct ===
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:00<00:06,  1.15it/s]Loading checkpoint shards:  25%|██▌       | 2/8 [00:01<00:04,  1.26it/s]Loading checkpoint shards:  38%|███▊      | 3/8 [00:02<00:03,  1.30it/s]Loading checkpoint shards:  50%|█████     | 4/8 [00:03<00:03,  1.32it/s]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:03<00:02,  1.32it/s]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:04<00:01,  1.33it/s]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:05<00:00,  1.34it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:05<00:00,  1.39it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:05<00:00,  1.34it/s]
+    [direct] 20/120  (16s)
+    [direct] 40/120  (31s)
+    [direct] 60/120  (36s)
+    [direct] 80/120  (42s)
+    [direct] 100/120  (48s)
+    [direct] 120/120  (53s)
+    [cot] 20/120  (580s)
+    [cot] 40/120  (1150s)
+    [cot] 60/120  (1577s)
+    [cot] 80/120  (1952s)
+    [cot] 100/120  (2242s)
+    [cot] 120/120  (2559s)
+  direct: n=120  marker 120/120 (100.0%)  strict 50.0%  last-line 50.0%  mentions-gt 50.0%
+          marker-less: 0  of which last-line rescues 0
+  cot: n=120  marker 120/120 (100.0%)  strict 72.5%  last-line 72.5%  mentions-gt 84.2%
+          marker-less: 0  of which last-line rescues 0
+
+=== Qwen/Qwen2.5-1.5B-Instruct ===
+    [direct] 20/120  (6s)
+    [direct] 40/120  (12s)
+    [direct] 60/120  (13s)
+    [direct] 80/120  (14s)
+    [direct] 100/120  (16s)
+    [direct] 120/120  (19s)
+    [cot] 20/120  (211s)
+    [cot] 40/120  (409s)
+    [cot] 60/120  (581s)
+    [cot] 80/120  (748s)
+    [cot] 100/120  (905s)
+    [cot] 120/120  (1062s)
+  direct: n=120  marker 86/120 (71.7%)  strict 39.2%  last-line 39.2%  mentions-gt 39.2%
+          marker-less: 34  of which last-line rescues 0
+  cot: n=120  marker 111/120 (92.5%)  strict 27.5%  last-line 27.5%  mentions-gt 66.7%
+          marker-less: 9  of which last-line rescues 0
+
+wrote marker_audit_result.json

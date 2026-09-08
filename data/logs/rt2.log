@@ -1,0 +1,203 @@
+48 tasks; majority-class baseline overall 33.3% ({'acl': 56.2, 'bgp': 37.5, 'subnet': 6.2})
+waiting for an exclusive GPU ...
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python'), (1626884, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python'), (1626884, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python'), (1626884, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python'), (1626884, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python'), (1626884, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python'), (1626884, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python'), (1626884, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python'), (1626884, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python'), (1626884, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python'), (1626884, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python'), (1626884, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python'), (1626884, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python'), (1626884, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python'), (1626884, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python'), (1626884, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python'), (1626884, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python'), (1626884, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python'), (1629905, 'python3')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python')]
+  [queue] busy: [(1613397, '/mnt/data/venv_train/bin/python')]
+  [queue] busy: [(1633195, 'python3')]
+  [queue] busy: [(1633195, 'python3')]
+  [queue] busy: [(1633195, 'python3')]
+  [queue] busy: [(1633195, 'python3')]
+  [queue] busy: [(1633195, 'python3')]
+  [queue] busy: [(1633195, 'python3')]
+  [queue] busy: [(1633195, 'python3')]
+  [queue] busy: [(1633195, 'python3')]
+  [queue] busy: [(1633195, 'python3')]
+    [opening idle]  159.55 W (sd 80.15, n=200)
+
+=== Qwen/Qwen2.5-1.5B-Instruct (1.5B) ===
+    foreign job -- waiting
+  [queue] busy: [(1635655, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(1635655, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(1635655, '/mnt/data/venv_cu12/bin/python'), (1636219, 'python3')]
+  [queue] busy: [(1635655, '/mnt/data/venv_cu12/bin/python'), (1636219, 'python3')]
+  [queue] busy: [(1635655, '/mnt/data/venv_cu12/bin/python'), (1636219, 'python3')]
+  [queue] busy: [(1635655, '/mnt/data/venv_cu12/bin/python'), (1636219, 'python3')]
+  [queue] busy: [(1635655, '/mnt/data/venv_cu12/bin/python'), (1636219, 'python3')]
+  [queue] busy: [(1635655, '/mnt/data/venv_cu12/bin/python'), (1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3'), (1637852, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(1636219, 'python3'), (1637852, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(1636219, 'python3'), (1637852, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(1636219, 'python3'), (1637852, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+  [queue] busy: [(1636219, 'python3')]
+    loaded 3.6 s
+    [resident idle pre]   93.48 W (sd 0.94, n=120)
+    direct sweep 1:   6.77 s, 68 samples, 423.1 J total
+    direct sweep 2:   6.73 s, 67 samples, 408.3 J total
+    direct sweep 3:   6.79 s, 68 samples, 442.5 J total
+    ... cot 16/48
+    ... cot 32/48
+    ... cot 48/48
+    [resident idle post]   94.87 W (sd 2.47, n=119)
+    direct: acc  43.8%      8.85 J/task     8.7 tok  {'acl': 0.75, 'bgp': 0.4375, 'subnet': 0.125}
+    cot   : acc  14.6%    437.48 J/task   436.7 tok  {'acl': 0.375, 'bgp': 0.0625, 'subnet': 0.0}
+    energy multiplier: 49.5x
+
+=== Qwen/Qwen2.5-3B-Instruct (3.0B) ===
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  1.18it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.53it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.47it/s]
+    loaded 2.7 s
+    [resident idle pre]   93.30 W (sd 0.99, n=120)
+    direct sweep 1:  10.18 s, 102 samples, 909.4 J total
+    direct sweep 2:  10.07 s, 101 samples, 918.2 J total
+    direct sweep 3:  10.09 s, 100 samples, 897.4 J total
+    ... cot 16/48
+    ... cot 32/48
+    ... cot 48/48
+    [resident idle post]   98.26 W (sd 3.80, n=120)
+    direct: acc  43.8%     18.92 J/task     9.9 tok  {'acl': 0.9375, 'bgp': 0.3125, 'subnet': 0.0625}
+    cot   : acc  25.0%    793.34 J/task   417.7 tok  {'acl': 0.5, 'bgp': 0.1875, 'subnet': 0.0625}
+    energy multiplier: 41.9x
+
+=== Qwen/Qwen2.5-7B-Instruct (7.0B) ===
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.02s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.04it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.04it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.07it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.06it/s]
+    loaded 5.1 s
+    [resident idle pre]   94.93 W (sd 1.07, n=120)
+    direct sweep 1:  11.31 s, 113 samples, 1877.7 J total
+    direct sweep 2:  11.32 s, 113 samples, 1920.0 J total
+    direct sweep 3:  11.31 s, 113 samples, 1944.9 J total
+    ... cot 16/48
+    ... cot 32/48
+    ... cot 48/48
+    [resident idle post]  103.42 W (sd 6.83, n=119)
+    direct: acc  50.0%     39.88 J/task     9.7 tok  {'acl': 0.9375, 'bgp': 0.5, 'subnet': 0.0625}
+    cot   : acc  39.6%   1584.32 J/task   389.1 tok  {'acl': 0.5625, 'bgp': 0.5625, 'subnet': 0.0625}
+    energy multiplier: 39.7x
+
+=== Qwen/Qwen2.5-14B-Instruct (14.0B) ===
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:00<00:05,  1.21it/s]Loading checkpoint shards:  25%|██▌       | 2/8 [00:01<00:04,  1.38it/s]Loading checkpoint shards:  38%|███▊      | 3/8 [00:02<00:03,  1.44it/s]Loading checkpoint shards:  50%|█████     | 4/8 [00:02<00:02,  1.47it/s]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:03<00:02,  1.48it/s]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:04<00:01,  1.49it/s]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:04<00:00,  1.42it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:05<00:00,  1.70it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:05<00:00,  1.53it/s]
+    loaded 6.6 s
+    [resident idle pre]   97.97 W (sd 1.30, n=119)
+    direct sweep 1:  20.86 s, 209 samples, 3816.8 J total
+    direct sweep 2:  20.86 s, 208 samples, 3939.4 J total
+    direct sweep 3:  20.86 s, 209 samples, 3999.8 J total
+    ... cot 16/48
+    ... cot 32/48
+    ... cot 48/48
+    [resident idle post]  103.20 W (sd 7.06, n=120)
+    direct: acc  52.1%     81.64 J/task     9.6 tok  {'acl': 0.8125, 'bgp': 0.6875, 'subnet': 0.0625}
+    cot   : acc  43.8%   3303.46 J/task   404.7 tok  {'acl': 0.5625, 'bgp': 0.6875, 'subnet': 0.0625}
+    energy multiplier: 40.5x
+
+=== REASONING TAX ===
+majority-class baseline: 33.3%
+model                       acc dir  acc cot    J dir     J cot      xE  J/corr dir  J/corr cot
+Qwen2.5-1.5B-Instruct         43.8%    14.6%      8.8     437.5    49.5        20.2      2999.9
+Qwen2.5-3B-Instruct           43.8%    25.0%     18.9     793.3    41.9        43.3      3173.4
+Qwen2.5-7B-Instruct           50.0%    39.6%     39.9    1584.3    39.7        79.8      4002.5
+Qwen2.5-14B-Instruct          52.1%    43.8%     81.6    3303.5    40.5       156.7      7550.8

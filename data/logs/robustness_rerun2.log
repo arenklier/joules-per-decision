@@ -1,0 +1,251 @@
+120 tasks, 3 templates per condition, cot cap 1024
+waiting for an exclusive GPU ...
+    [opening idle]   85.09 W (sd 0.42, n=200)
+
+=== Qwen/Qwen2.5-1.5B-Instruct (1.5B) ===
+    loaded 5.8 s
+    [resident idle pre]   85.31 W (sd 0.70, n=119)
+    direct tpl0: acc  35.0%     9.08 J/task
+    direct tpl1: acc  37.5%     9.07 J/task
+    direct tpl2: acc  45.0%     9.59 J/task
+    ... cot 30/120
+    ... cot 60/120
+    ... cot 90/120
+    ... cot 120/120
+    [resident idle post]   94.24 W (sd 2.18, n=119)
+    direct acc  39.2%  cot acc  27.5%  delta -11.7 pp   McNemar b=26 c=12 p=0.03355
+    tpl spread  direct [35.0, 37.5, 45.0]  cot [20.0, 32.5, 30.0]
+    energy  direct 9.25 J  cot 617.1 J  x66.7  capped 2%
+
+=== Qwen/Qwen2.5-3B-Instruct (3.0B) ===
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.99s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  1.89s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.20s/it]
+    loaded 5.7 s
+    [resident idle pre]   92.30 W (sd 1.07, n=119)
+    direct tpl0: acc  50.0%    19.30 J/task
+    direct tpl1: acc  50.0%    18.81 J/task
+    direct tpl2: acc  45.0%    19.57 J/task
+    ... cot 30/120
+    ... cot 60/120
+    ... cot 90/120
+    ... cot 120/120
+    [resident idle post]   98.17 W (sd 3.59, n=120)
+    direct acc  48.3%  cot acc  49.2%  delta  +0.8 pp   McNemar b=14 c=15 p=1
+    tpl spread  direct [50.0, 50.0, 45.0]  cot [45.0, 50.0, 52.5]
+    energy  direct 19.23 J  cot 840.2 J  x43.7  capped 0%
+
+=== Qwen/Qwen2.5-7B-Instruct (7.0B) ===
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.02s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.07it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.12it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.19it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.14it/s]
+    loaded 4.7 s
+    [resident idle pre]   94.99 W (sd 1.18, n=120)
+    direct tpl0: acc  55.0%    40.47 J/task
+    direct tpl1: acc  50.0%    40.11 J/task
+    direct tpl2: acc  60.0%    41.11 J/task
+    ... cot 30/120
+    ... cot 60/120
+    ... cot 90/120
+    ... cot 120/120
+    [resident idle post]  261.69 W (sd 14.86, n=120)
+    direct acc  55.0%  cot acc  52.5%  delta  -2.5 pp   McNemar b=18 c=15 p=0.7283
+    tpl spread  direct [55.0, 50.0, 60.0]  cot [45.0, 47.5, 65.0]
+    energy  direct 40.56 J  cot 2179.7 J  x53.7  capped 0%
+
+=== Qwen/Qwen2.5-14B-Instruct (14.0B) ===
+    foreign job -- waiting
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2115379, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2129161, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2129161, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2129161, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2129161, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2129161, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2129161, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2129161, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2129161, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2129161, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2129161, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python'), (2141074, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python'), (2141074, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python'), (2141074, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python'), (2141074, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python'), (2141074, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python'), (2141074, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python'), (2141074, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python'), (2141074, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python'), (2141074, '/mnt/data/venv_cu12/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2132619, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2145758, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2145758, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2145758, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2145758, '/mnt/data/makale-extreme/.venv/bin/python')]
+  [queue] busy: [(2145758, '/mnt/data/makale-extreme/.venv/bin/python')]
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:13,  1.94s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:02<00:07,  1.25s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:03<00:05,  1.03s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:04<00:03,  1.08it/s]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:05<00:02,  1.15it/s]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:05<00:01,  1.19it/s]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:07<00:01,  1.15s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:08<00:00,  1.06it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:08<00:00,  1.01s/it]
+    loaded 11.3 s
+    [resident idle pre]   88.55 W (sd 0.94, n=120)
+    direct tpl0: acc  45.0%    82.44 J/task
+    direct tpl1: acc  55.0%    81.21 J/task
+    direct tpl2: acc  50.0%    85.51 J/task
+    ... cot 30/120
+    ... cot 60/120
+    ... cot 90/120
+    ... cot 120/120
+    [resident idle post]  102.87 W (sd 4.19, n=120)
+    direct acc  50.0%  cot acc  72.5%  delta +22.5 pp   McNemar b=5 c=32 p=7.428e-06
+    tpl spread  direct [45.0, 55.0, 50.0]  cot [75.0, 70.0, 72.5]
+    energy  direct 83.05 J  cot 4179.0 J  x50.3  capped 0%
+
+=== ROBUSTNESS SUMMARY ===
+model         accD    accC   delta  McNemar p    J dir     J cot     xE     tpl spread D/C
+1.5B         39.2%   27.5%  -11.7    0.03355     9.25     617.1  66.7x     4.2 /   5.4 pp
+3B           48.3%   49.2%   +0.8          1    19.23     840.2  43.7x     2.4 /   3.1 pp
+7B           55.0%   52.5%   -2.5     0.7283    40.56    2179.7  53.7x     4.1 /   8.9 pp
+14B          50.0%   72.5%  +22.5  7.428e-06    83.05    4179.0  50.3x     4.1 /   2.0 pp

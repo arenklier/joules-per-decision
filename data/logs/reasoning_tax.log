@@ -1,0 +1,86 @@
+24 verifiable tasks (acl, bgp, subnet)
+waiting for an exclusive GPU ...
+  [queue] busy: [(1519089, 'python3')]
+  [queue] busy: [(1519089, 'python3')]
+  [queue] busy: [(1519089, 'python3')]
+  [queue] busy: [(1519089, 'python3')]
+  [queue] busy: [(1519089, 'python3')]
+  [queue] busy: [(1519089, 'python3')]
+  [queue] busy: [(1519089, 'python3')]
+  [queue] busy: [(1519089, 'python3')]
+  [queue] busy: [(1519089, 'python3')]
+  [queue] busy: [(1519089, 'python3')]
+  [queue] busy: [(1520795, 'python3')]
+  [queue] busy: [(1521732, 'python3')]
+  [queue] busy: [(1521732, 'python3')]
+  [queue] busy: [(1521732, 'python3')]
+  [queue] busy: [(1521732, 'python3')]
+  [queue] busy: [(1521732, 'python3')]
+  [queue] busy: [(1521732, 'python3')]
+  [queue] busy: [(1522857, 'python3')]
+  [queue] busy: [(1523800, 'python3')]
+  [queue] busy: [(1523800, 'python3')]
+  [queue] busy: [(1523800, 'python3')]
+  [queue] busy: [(1523800, 'python3')]
+  [queue] busy: [(1523800, 'python3')]
+  [queue] busy: [(1523800, 'python3')]
+  [queue] busy: [(1523800, 'python3')]
+  [queue] busy: [(1524938, 'python3')]
+  [queue] busy: [(1525871, 'python3')]
+  [queue] busy: [(1525871, 'python3')]
+  [queue] busy: [(1525871, 'python3')]
+  [queue] busy: [(1525871, 'python3')]
+  [queue] busy: [(1525871, 'python3')]
+    [opening idle]   93.26 W (sd 0.75, n=200)
+
+=== Qwen/Qwen2.5-1.5B-Instruct (1.5B) ===
+    loaded 3.6 s
+    [resident idle pre]   92.32 W (sd 0.90, n=120)
+    ... 8/24 tasks
+    ... 16/24 tasks
+    ... 24/24 tasks
+    [resident idle post]   93.08 W (sd 3.38, n=120)
+    direct: acc  12.5%      -7.5 J/task    16.8 tok       -59.8 J/correct
+    cot   : acc   4.2%     451.0 J/task   449.1 tok     10824.9 J/correct
+
+=== Qwen/Qwen2.5-3B-Instruct (3.0B) ===
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  1.46it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.90it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.82it/s]
+    loaded 2.8 s
+    [resident idle pre]   91.38 W (sd 1.03, n=120)
+    ... 8/24 tasks
+    ... 16/24 tasks
+    ... 24/24 tasks
+    [resident idle post]   96.77 W (sd 4.01, n=120)
+    direct: acc  25.0%      -2.5 J/task    13.4 tok       -10.0 J/correct
+    cot   : acc  29.2%     775.2 J/task   417.0 tok      2657.9 J/correct
+    WARNING: cell dirty (drift 5.4 W, foreign [])
+
+=== Qwen/Qwen2.5-7B-Instruct (7.0B) ===
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.02s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.07it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.13it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.20it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.15it/s]
+    loaded 4.9 s
+    [resident idle pre]   93.83 W (sd 1.15, n=120)
+    ... 8/24 tasks
+    ... 16/24 tasks
+    ... 24/24 tasks
+    [resident idle post]  105.67 W (sd 7.58, n=120)
+    direct: acc  43.8%      -0.3 J/task    11.4 tok        -0.7 J/correct
+    cot   : acc  41.7%    1515.9 J/task   387.0 tok      3638.2 J/correct
+    WARNING: cell dirty (drift 11.8 W, foreign [])
+
+=== Qwen/Qwen2.5-14B-Instruct (14.0B) ===
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:00<00:04,  1.42it/s]Loading checkpoint shards:  25%|██▌       | 2/8 [00:01<00:04,  1.38it/s]Loading checkpoint shards:  38%|███▊      | 3/8 [00:02<00:03,  1.36it/s]Loading checkpoint shards:  50%|█████     | 4/8 [00:02<00:02,  1.36it/s]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:03<00:02,  1.34it/s]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:04<00:01,  1.34it/s]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:05<00:00,  1.38it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:05<00:00,  1.74it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:05<00:00,  1.49it/s]
+    loaded 6.9 s
+    [resident idle pre]  100.11 W (sd 1.16, n=120)
+    ... 8/24 tasks
+    ... 16/24 tasks
+    ... 24/24 tasks
+    [resident idle post]  103.17 W (sd 4.45, n=120)
+    direct: acc  45.8%       2.1 J/task     9.4 tok         4.6 J/correct
+    cot   : acc  54.2%    3258.3 J/task   404.5 tok      6015.3 J/correct
+
+=== REASONING TAX ===
+model                           acc dir  acc cot     J dir     J cot  x energy  J/corr dir  J/corr cot
+Qwen2.5-1.5B-Instruct             12.5%     4.2%      -7.5     451.0   -60.33x       -59.8     10824.9
+Qwen2.5-3B-Instruct               25.0%    29.2%      -2.5     775.2  -311.20x       -10.0      2657.9
+Qwen2.5-7B-Instruct               43.8%    41.7%      -0.3    1515.9 -5098.91x        -0.7      3638.2
+Qwen2.5-14B-Instruct              45.8%    54.2%       2.1    3258.3  1553.40x         4.6      6015.3

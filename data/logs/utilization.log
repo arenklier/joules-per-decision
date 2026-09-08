@@ -1,0 +1,66 @@
+120 prompts, batches [1, 2, 4, 8, 16, 32, 64], 128 forced tokens each
+waiting for an exclusive GPU ...
+    [opening idle]   85.61 W (sd 0.49)
+
+=== Qwen/Qwen2.5-3B-Instruct (3.0B) ===
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  1.07it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.56it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.46it/s]
+    [resident idle pre]   85.66 W (sd 0.97)
+    batch   1:   3.06 s     192.8 J/batch   192.77 J/req    0.33 req/s     41.8 tok/s  (3/3 olculebilir)
+    batch   2:   3.19 s     184.5 J/batch    92.26 J/req    0.63 req/s     80.3 tok/s  (3/3 olculebilir)
+    batch   4:   3.23 s     185.4 J/batch    46.34 J/req    1.24 req/s    158.5 tok/s  (3/3 olculebilir)
+    batch   8:   3.24 s     244.4 J/batch    30.55 J/req    2.47 req/s    315.7 tok/s  (3/3 olculebilir)
+    batch  16:   3.26 s     267.0 J/batch    16.69 J/req    4.90 req/s    627.8 tok/s  (3/3 olculebilir)
+    batch  32:   3.38 s     367.4 J/batch    11.48 J/req    9.47 req/s   1212.0 tok/s  (3/3 olculebilir)
+    batch  64:   4.80 s     944.3 J/batch    14.76 J/req   13.34 req/s   1707.2 tok/s  (3/3 olculebilir)
+    [resident idle post]   91.91 W (sd 4.56)
+    best batch 32 -> 11.48 J/req (16.8x better than batch 1)
+           100 req/day:    74019.1 J/req total, idle is 100.0%
+         1,000 req/day:     7412.2 J/req total, idle is  99.8%
+        10,000 req/day:      751.6 J/req total, idle is  98.5%
+       100,000 req/day:       85.5 J/req total, idle is  86.6%
+      1,000,000 req/day:       18.9 J/req total, idle is  39.2%
+
+=== Qwen/Qwen2.5-14B-Instruct (14.0B) ===
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:00<00:05,  1.35it/s]Loading checkpoint shards:  25%|██▌       | 2/8 [00:01<00:04,  1.36it/s]Loading checkpoint shards:  38%|███▊      | 3/8 [00:02<00:03,  1.36it/s]Loading checkpoint shards:  50%|█████     | 4/8 [00:02<00:02,  1.36it/s]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:03<00:02,  1.34it/s]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:04<00:01,  1.34it/s]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:05<00:00,  1.40it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:05<00:00,  1.76it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:05<00:00,  1.49it/s]
+    [resident idle pre]   88.88 W (sd 1.18)
+    batch   1:   5.61 s     894.3 J/batch   894.26 J/req    0.18 req/s     22.8 tok/s  (3/3 olculebilir)
+    batch   2:   6.06 s     864.2 J/batch   432.09 J/req    0.33 req/s     42.3 tok/s  (3/3 olculebilir)
+    batch   4:   6.25 s     894.0 J/batch   223.51 J/req    0.64 req/s     81.9 tok/s  (3/3 olculebilir)
+    batch   8:   6.59 s    1040.1 J/batch   130.01 J/req    1.21 req/s    155.5 tok/s  (3/3 olculebilir)
+    batch  16:   7.17 s    1249.7 J/batch    78.11 J/req    2.23 req/s    285.8 tok/s  (3/3 olculebilir)
+    batch  32:   8.39 s    1737.7 J/batch    54.30 J/req    3.81 req/s    488.0 tok/s  (3/3 olculebilir)
+    FAILED: OutOfMemoryError: CUDA out of memory. Tried to allocate 8.27 GiB. GPU 0 has a total capacity of 44.39 GiB of which 7.04 GiB is free. Process 3046832 has 432.89 MiB memory in use. Including non-PyTorch memory, this process has 36.90 GiB memory in use. Of the allocated memory 35.36 GiB is allocated by PyTorch, and 1.04 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Traceback (most recent call last):
+  File "/mnt/data/joule-spike/utilization_sweep.py", line 134, in main
+    model.generate(**enc, max_new_tokens=4, min_new_tokens=4)
+  File "/mnt/data/venv_cu12/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/venv_cu12/lib/python3.12/site-packages/transformers/generation/utils.py", line 2024, in generate
+    result = self._sample(
+             ^^^^^^^^^^^^^
+  File "/mnt/data/venv_cu12/lib/python3.12/site-packages/transformers/generation/utils.py", line 2982, in _sample
+    outputs = self(**model_inputs, return_dict=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/venv_cu12/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/venv_cu12/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/venv_cu12/lib/python3.12/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 1119, in forward
+    logits = logits.float()
+             ^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 8.27 GiB. GPU 0 has a total capacity of 44.39 GiB of which 7.04 GiB is free. Process 3046832 has 432.89 MiB memory in use. Including non-PyTorch memory, this process has 36.90 GiB memory in use. Of the allocated memory 35.36 GiB is allocated by PyTorch, and 1.04 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+=== SERVING ECONOMICS ===
+
+3B  (idle 85.7 W, drift 6.26 W, DIRTY)
+   batch     J/req    req/s     tok/s  VRAM GiB
+       1    192.77     0.33      41.8      6.49
+       2     92.26     0.63      80.3      6.57
+       4     46.34     1.24     158.5      6.71
+       8     30.55     2.47     315.7      7.00
+      16     16.69     4.90     627.8      7.59
+      32     11.48     9.47    1212.0      8.76
+      64     14.76    13.34    1707.2     19.37

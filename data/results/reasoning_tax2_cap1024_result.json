@@ -1,0 +1,1928 @@
+{
+ "open_idle": 88.30834999999999,
+ "n_tasks": 48,
+ "majority_baseline": 0.3333333333333333,
+ "fam_baseline": {
+  "acl": 0.5625,
+  "bgp": 0.375,
+  "subnet": 0.0625
+ },
+ "results": [
+  {
+   "repo": "Qwen/Qwen2.5-1.5B-Instruct",
+   "params_b": 1.5,
+   "dirty": true,
+   "pre_w": 87.836,
+   "post_w": 94.59133333333334,
+   "drift_w": 6.75533333333334,
+   "direct": {
+    "measurable": true,
+    "sweeps_n_samples": [
+     72,
+     72,
+     71
+    ],
+    "sweep_dur_s": [
+     7.2063868045806885,
+     7.160852432250977,
+     7.1322314739227295
+    ],
+    "j_per_task": 9.010906611149512,
+    "j_per_task_sd": 0.18283718208404695,
+    "tok_per_task": 8.666666666666666,
+    "acc": 0.4375,
+    "fam_acc": {
+     "acl": 0.75,
+     "bgp": 0.4375,
+     "subnet": 0.125
+    }
+   },
+   "cot_rows": [
+    {
+     "task": "subnet_00",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 492,
+     "dur_s": 8.413372278213501,
+     "n_samples": 84,
+     "net_j": 494.3393033239836
+    },
+    {
+     "task": "subnet_01",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 681,
+     "dur_s": 11.696732521057129,
+     "n_samples": 117,
+     "net_j": 726.8223606021404
+    },
+    {
+     "task": "subnet_02",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 338,
+     "dur_s": 5.774800777435303,
+     "n_samples": 58,
+     "net_j": 330.3069978117945
+    },
+    {
+     "task": "subnet_03",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 945,
+     "dur_s": 15.820802927017212,
+     "n_samples": 158,
+     "net_j": 1044.8802611918447
+    },
+    {
+     "task": "subnet_04",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 421,
+     "dur_s": 7.039853811264038,
+     "n_samples": 70,
+     "net_j": 428.82620379400237
+    },
+    {
+     "task": "subnet_05",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 818,
+     "dur_s": 13.699304580688477,
+     "n_samples": 137,
+     "net_j": 924.9777312796114
+    },
+    {
+     "task": "subnet_06",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 427,
+     "dur_s": 7.158598184585571,
+     "n_samples": 72,
+     "net_j": 451.73177283239363
+    },
+    {
+     "task": "subnet_07",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 776,
+     "dur_s": 12.968019008636475,
+     "n_samples": 129,
+     "net_j": 860.221044522762
+    },
+    {
+     "task": "subnet_08",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 638,
+     "dur_s": 10.625166416168213,
+     "n_samples": 107,
+     "net_j": 711.1611077992912
+    },
+    {
+     "task": "subnet_09",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 1024,
+     "dur_s": 17.19200348854065,
+     "n_samples": 171,
+     "net_j": 1184.1149221303474
+    },
+    {
+     "task": "subnet_10",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 315,
+     "dur_s": 5.249421834945679,
+     "n_samples": 53,
+     "net_j": 338.7703909156322
+    },
+    {
+     "task": "subnet_11",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 660,
+     "dur_s": 11.03013801574707,
+     "n_samples": 110,
+     "net_j": 741.6895804436203
+    },
+    {
+     "task": "subnet_12",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 659,
+     "dur_s": 11.049779653549194,
+     "n_samples": 111,
+     "net_j": 754.2463610863682
+    },
+    {
+     "task": "subnet_13",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 550,
+     "dur_s": 9.20347285270691,
+     "n_samples": 92,
+     "net_j": 610.2301017551421
+    },
+    {
+     "task": "subnet_14",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 574,
+     "dur_s": 9.550115585327148,
+     "n_samples": 95,
+     "net_j": 632.962536156655
+    },
+    {
+     "task": "subnet_15",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 645,
+     "dur_s": 10.744648218154907,
+     "n_samples": 107,
+     "net_j": 731.399198924064
+    },
+    {
+     "task": "acl_00",
+     "family": "acl",
+     "correct": false,
+     "new_tok": 320,
+     "dur_s": 5.326637268066406,
+     "n_samples": 54,
+     "net_j": 341.69728150701525
+    },
+    {
+     "task": "acl_01",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 792,
+     "dur_s": 13.225255727767944,
+     "n_samples": 132,
+     "net_j": 919.1550169997215
+    },
+    {
+     "task": "acl_02",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 645,
+     "dur_s": 10.71268343925476,
+     "n_samples": 107,
+     "net_j": 747.2586314151289
+    },
+    {
+     "task": "acl_03",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 392,
+     "dur_s": 6.548027753829956,
+     "n_samples": 65,
+     "net_j": 418.64656138563146
+    },
+    {
+     "task": "acl_04",
+     "family": "acl",
+     "correct": false,
+     "new_tok": 328,
+     "dur_s": 5.468219995498657,
+     "n_samples": 55,
+     "net_j": 343.24567134451877
+    },
+    {
+     "task": "acl_05",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 431,
+     "dur_s": 7.188218593597412,
+     "n_samples": 72,
+     "net_j": 473.9044806602002
+    },
+    {
+     "task": "acl_06",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 459,
+     "dur_s": 7.642213582992554,
+     "n_samples": 76,
+     "net_j": 509.4188326961994
+    },
+    {
+     "task": "acl_07",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 309,
+     "dur_s": 5.120990514755249,
+     "n_samples": 51,
+     "net_j": 318.9681610522271
+    },
+    {
+     "task": "acl_08",
+     "family": "acl",
+     "correct": false,
+     "new_tok": 380,
+     "dur_s": 6.321446180343628,
+     "n_samples": 63,
+     "net_j": 409.41505802345284
+    },
+    {
+     "task": "acl_09",
+     "family": "acl",
+     "correct": false,
+     "new_tok": 503,
+     "dur_s": 8.402028799057007,
+     "n_samples": 84,
+     "net_j": 563.5150633113388
+    },
+    {
+     "task": "acl_10",
+     "family": "acl",
+     "correct": false,
+     "new_tok": 410,
+     "dur_s": 6.848905086517334,
+     "n_samples": 69,
+     "net_j": 444.4528619492055
+    },
+    {
+     "task": "acl_11",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 196,
+     "dur_s": 3.2681503295898438,
+     "n_samples": 33,
+     "net_j": 188.6205531976223
+    },
+    {
+     "task": "acl_12",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 635,
+     "dur_s": 10.556270122528076,
+     "n_samples": 105,
+     "net_j": 719.251578626394
+    },
+    {
+     "task": "acl_13",
+     "family": "acl",
+     "correct": false,
+     "new_tok": 382,
+     "dur_s": 6.354304075241089,
+     "n_samples": 64,
+     "net_j": 423.76816826033576
+    },
+    {
+     "task": "acl_14",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 390,
+     "dur_s": 6.499742269515991,
+     "n_samples": 64,
+     "net_j": 414.2568388044839
+    },
+    {
+     "task": "acl_15",
+     "family": "acl",
+     "correct": false,
+     "new_tok": 355,
+     "dur_s": 5.9152281284332275,
+     "n_samples": 60,
+     "net_j": 401.77069145321843
+    },
+    {
+     "task": "bgp_00",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 552,
+     "dur_s": 9.192042827606201,
+     "n_samples": 91,
+     "net_j": 607.9120871384148
+    },
+    {
+     "task": "bgp_01",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 593,
+     "dur_s": 9.840794086456299,
+     "n_samples": 99,
+     "net_j": 691.7097888107305
+    },
+    {
+     "task": "bgp_02",
+     "family": "bgp",
+     "correct": true,
+     "new_tok": 242,
+     "dur_s": 4.040028095245361,
+     "n_samples": 40,
+     "net_j": 237.90860528564457
+    },
+    {
+     "task": "bgp_03",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 529,
+     "dur_s": 8.827553749084473,
+     "n_samples": 88,
+     "net_j": 592.0029615595347
+    },
+    {
+     "task": "bgp_04",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 470,
+     "dur_s": 8.086430549621582,
+     "n_samples": 81,
+     "net_j": 526.6329042320249
+    },
+    {
+     "task": "bgp_05",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 597,
+     "dur_s": 9.920121669769287,
+     "n_samples": 99,
+     "net_j": 677.8809859666819
+    },
+    {
+     "task": "bgp_06",
+     "family": "bgp",
+     "correct": true,
+     "new_tok": 559,
+     "dur_s": 9.264569997787476,
+     "n_samples": 93,
+     "net_j": 632.4299452023512
+    },
+    {
+     "task": "bgp_07",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 604,
+     "dur_s": 10.038716077804565,
+     "n_samples": 100,
+     "net_j": 695.0071711225507
+    },
+    {
+     "task": "bgp_08",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 609,
+     "dur_s": 10.142744064331055,
+     "n_samples": 101,
+     "net_j": 694.263835138798
+    },
+    {
+     "task": "bgp_09",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 286,
+     "dur_s": 4.755000591278076,
+     "n_samples": 48,
+     "net_j": 307.7028868680003
+    },
+    {
+     "task": "bgp_10",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 310,
+     "dur_s": 5.218456268310547,
+     "n_samples": 52,
+     "net_j": 319.62906739902473
+    },
+    {
+     "task": "bgp_11",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 432,
+     "dur_s": 7.525576829910278,
+     "n_samples": 75,
+     "net_j": 480.3171387763024
+    },
+    {
+     "task": "bgp_12",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 711,
+     "dur_s": 12.32607913017273,
+     "n_samples": 124,
+     "net_j": 850.0595965127955
+    },
+    {
+     "task": "bgp_13",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 245,
+     "dur_s": 4.210111379623413,
+     "n_samples": 42,
+     "net_j": 245.30976153087624
+    },
+    {
+     "task": "bgp_14",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 352,
+     "dur_s": 6.059904336929321,
+     "n_samples": 60,
+     "net_j": 370.88069254374534
+    },
+    {
+     "task": "bgp_15",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 555,
+     "dur_s": 9.508135080337524,
+     "n_samples": 95,
+     "net_j": 630.0535976233477
+    }
+   ],
+   "cot": {
+    "acc": 0.22916666666666666,
+    "fam_acc": {
+     "acl": 0.5625,
+     "bgp": 0.125,
+     "subnet": 0.0
+    },
+    "n_measurable": 48,
+    "j_per_task": 565.9109656451494,
+    "j_per_task_sd": 218.10373623850302,
+    "tok_per_task": 511.1666666666667
+   },
+   "energy_multiplier": 62.8028887731372,
+   "j_per_correct_direct": 20.596357968341742,
+   "j_per_correct_cot": 2469.429668269743
+  },
+  {
+   "repo": "Qwen/Qwen2.5-3B-Instruct",
+   "params_b": 3.0,
+   "dirty": true,
+   "pre_w": 92.43975,
+   "post_w": 98.04333333333334,
+   "drift_w": 5.603583333333333,
+   "direct": {
+    "measurable": true,
+    "sweeps_n_samples": [
+     103,
+     104,
+     104
+    ],
+    "sweep_dur_s": [
+     10.374560117721558,
+     10.410984754562378,
+     10.407915115356445
+    ],
+    "j_per_task": 19.131792059447204,
+    "j_per_task_sd": 0.17467846994711841,
+    "tok_per_task": 9.854166666666666,
+    "acc": 0.4375,
+    "fam_acc": {
+     "acl": 0.9375,
+     "bgp": 0.3125,
+     "subnet": 0.0625
+    }
+   },
+   "cot_rows": [
+    {
+     "task": "subnet_00",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 459,
+     "dur_s": 10.049220561981201,
+     "n_samples": 101,
+     "net_j": 825.2961792377237
+    },
+    {
+     "task": "subnet_01",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 533,
+     "dur_s": 11.623991966247559,
+     "n_samples": 116,
+     "net_j": 999.0747097263331
+    },
+    {
+     "task": "subnet_02",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 504,
+     "dur_s": 11.048388481140137,
+     "n_samples": 110,
+     "net_j": 942.3906247913833
+    },
+    {
+     "task": "subnet_03",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 494,
+     "dur_s": 10.84467339515686,
+     "n_samples": 109,
+     "net_j": 943.0178188882473
+    },
+    {
+     "task": "subnet_04",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 591,
+     "dur_s": 12.93461298942566,
+     "n_samples": 129,
+     "net_j": 1137.9233147191408
+    },
+    {
+     "task": "subnet_05",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 498,
+     "dur_s": 10.93687105178833,
+     "n_samples": 109,
+     "net_j": 944.887196755528
+    },
+    {
+     "task": "subnet_06",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 463,
+     "dur_s": 10.174179077148438,
+     "n_samples": 102,
+     "net_j": 891.9400284063822
+    },
+    {
+     "task": "subnet_07",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 574,
+     "dur_s": 12.574695587158203,
+     "n_samples": 126,
+     "net_j": 1126.2423108742234
+    },
+    {
+     "task": "subnet_08",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 647,
+     "dur_s": 14.123545169830322,
+     "n_samples": 141,
+     "net_j": 1273.1378836156125
+    },
+    {
+     "task": "subnet_09",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 501,
+     "dur_s": 10.952954292297363,
+     "n_samples": 109,
+     "net_j": 961.6532966744894
+    },
+    {
+     "task": "subnet_10",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 433,
+     "dur_s": 9.45715618133545,
+     "n_samples": 95,
+     "net_j": 828.4499173514846
+    },
+    {
+     "task": "subnet_11",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 604,
+     "dur_s": 13.154706239700317,
+     "n_samples": 131,
+     "net_j": 1181.9126528034815
+    },
+    {
+     "task": "subnet_12",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 515,
+     "dur_s": 11.254975318908691,
+     "n_samples": 113,
+     "net_j": 1017.7990557842247
+    },
+    {
+     "task": "subnet_13",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 545,
+     "dur_s": 11.909064531326294,
+     "n_samples": 119,
+     "net_j": 1074.282020875037
+    },
+    {
+     "task": "subnet_14",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 378,
+     "dur_s": 8.232038259506226,
+     "n_samples": 82,
+     "net_j": 717.023190892398
+    },
+    {
+     "task": "subnet_15",
+     "family": "subnet",
+     "correct": true,
+     "new_tok": 436,
+     "dur_s": 9.519690990447998,
+     "n_samples": 95,
+     "net_j": 852.0822546290173
+    },
+    {
+     "task": "acl_00",
+     "family": "acl",
+     "correct": false,
+     "new_tok": 541,
+     "dur_s": 11.818653345108032,
+     "n_samples": 118,
+     "net_j": 1085.7522324815397
+    },
+    {
+     "task": "acl_01",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 597,
+     "dur_s": 13.04564642906189,
+     "n_samples": 131,
+     "net_j": 1220.5244264499556
+    },
+    {
+     "task": "acl_02",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 621,
+     "dur_s": 13.605751514434814,
+     "n_samples": 135,
+     "net_j": 1256.82467816937
+    },
+    {
+     "task": "acl_03",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 486,
+     "dur_s": 10.667855501174927,
+     "n_samples": 106,
+     "net_j": 969.2223979657288
+    },
+    {
+     "task": "acl_04",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 627,
+     "dur_s": 13.72843599319458,
+     "n_samples": 137,
+     "net_j": 1273.7709257384547
+    },
+    {
+     "task": "acl_05",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 430,
+     "dur_s": 9.39626145362854,
+     "n_samples": 94,
+     "net_j": 848.0928738473058
+    },
+    {
+     "task": "acl_06",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 475,
+     "dur_s": 10.414228677749634,
+     "n_samples": 104,
+     "net_j": 945.88951045996
+    },
+    {
+     "task": "acl_07",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 474,
+     "dur_s": 10.374131679534912,
+     "n_samples": 104,
+     "net_j": 940.8500737525225
+    },
+    {
+     "task": "acl_08",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 297,
+     "dur_s": 6.492997646331787,
+     "n_samples": 65,
+     "net_j": 560.3983961848024
+    },
+    {
+     "task": "acl_09",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 153,
+     "dur_s": 3.3409297466278076,
+     "n_samples": 33,
+     "net_j": 243.9996819850802
+    },
+    {
+     "task": "acl_10",
+     "family": "acl",
+     "correct": false,
+     "new_tok": 631,
+     "dur_s": 13.746449708938599,
+     "n_samples": 138,
+     "net_j": 1296.1096145897511
+    },
+    {
+     "task": "acl_11",
+     "family": "acl",
+     "correct": false,
+     "new_tok": 804,
+     "dur_s": 17.550211191177368,
+     "n_samples": 175,
+     "net_j": 1674.4128822804073
+    },
+    {
+     "task": "acl_12",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 580,
+     "dur_s": 12.611116886138916,
+     "n_samples": 126,
+     "net_j": 1184.5845392333272
+    },
+    {
+     "task": "acl_13",
+     "family": "acl",
+     "correct": false,
+     "new_tok": 154,
+     "dur_s": 3.3649604320526123,
+     "n_samples": 34,
+     "net_j": 267.1657292966246
+    },
+    {
+     "task": "acl_14",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 295,
+     "dur_s": 6.432355642318726,
+     "n_samples": 64,
+     "net_j": 559.006173999012
+    },
+    {
+     "task": "acl_15",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 485,
+     "dur_s": 10.569624900817871,
+     "n_samples": 106,
+     "net_j": 980.9091267895693
+    },
+    {
+     "task": "bgp_00",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 302,
+     "dur_s": 6.568390369415283,
+     "n_samples": 65,
+     "net_j": 557.4066728368999
+    },
+    {
+     "task": "bgp_01",
+     "family": "bgp",
+     "correct": true,
+     "new_tok": 332,
+     "dur_s": 7.219653606414795,
+     "n_samples": 72,
+     "net_j": 633.1718592180016
+    },
+    {
+     "task": "bgp_02",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 205,
+     "dur_s": 4.463548898696899,
+     "n_samples": 45,
+     "net_j": 369.34132139807946
+    },
+    {
+     "task": "bgp_03",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 243,
+     "dur_s": 5.294305086135864,
+     "n_samples": 53,
+     "net_j": 443.3903000000116
+    },
+    {
+     "task": "bgp_04",
+     "family": "bgp",
+     "correct": true,
+     "new_tok": 303,
+     "dur_s": 6.623389482498169,
+     "n_samples": 66,
+     "net_j": 565.1054388838413
+    },
+    {
+     "task": "bgp_05",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 341,
+     "dur_s": 7.480639219284058,
+     "n_samples": 75,
+     "net_j": 657.7450187847013
+    },
+    {
+     "task": "bgp_06",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 586,
+     "dur_s": 12.787070751190186,
+     "n_samples": 128,
+     "net_j": 1192.6181296397442
+    },
+    {
+     "task": "bgp_07",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 295,
+     "dur_s": 6.431137323379517,
+     "n_samples": 64,
+     "net_j": 547.0172968021034
+    },
+    {
+     "task": "bgp_08",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 430,
+     "dur_s": 9.391929149627686,
+     "n_samples": 94,
+     "net_j": 849.6411431435344
+    },
+    {
+     "task": "bgp_09",
+     "family": "bgp",
+     "correct": true,
+     "new_tok": 294,
+     "dur_s": 6.433008670806885,
+     "n_samples": 64,
+     "net_j": 548.7649718638658
+    },
+    {
+     "task": "bgp_10",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 334,
+     "dur_s": 7.281921148300171,
+     "n_samples": 73,
+     "net_j": 646.1513525230289
+    },
+    {
+     "task": "bgp_11",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 406,
+     "dur_s": 8.822885751724243,
+     "n_samples": 88,
+     "net_j": 793.8924770453573
+    },
+    {
+     "task": "bgp_12",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 591,
+     "dur_s": 12.90541934967041,
+     "n_samples": 129,
+     "net_j": 1195.6315602178572
+    },
+    {
+     "task": "bgp_13",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 346,
+     "dur_s": 7.56500244140625,
+     "n_samples": 76,
+     "net_j": 673.7137437105176
+    },
+    {
+     "task": "bgp_14",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 373,
+     "dur_s": 8.122328042984009,
+     "n_samples": 81,
+     "net_j": 730.5932389743928
+    },
+    {
+     "task": "bgp_15",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 237,
+     "dur_s": 5.157216310501099,
+     "n_samples": 51,
+     "net_j": 417.7914025278687
+    }
+   ],
+   "cot": {
+    "acc": 0.3333333333333333,
+    "fam_acc": {
+     "acl": 0.75,
+     "bgp": 0.1875,
+     "subnet": 0.0625
+    },
+    "n_measurable": 48,
+    "j_per_task": 871.8042009753734,
+    "j_per_task_sd": 302.13354517500744,
+    "tok_per_task": 446.7291666666667
+   },
+   "energy_multiplier": 45.56835022388193,
+   "j_per_correct_direct": 43.729810421593605,
+   "j_per_correct_cot": 2615.4126029261206
+  },
+  {
+   "repo": "Qwen/Qwen2.5-7B-Instruct",
+   "params_b": 7.0,
+   "dirty": true,
+   "pre_w": 95.31915966386555,
+   "post_w": 106.77125,
+   "drift_w": 11.452090336134447,
+   "direct": {
+    "measurable": true,
+    "sweeps_n_samples": [
+     113,
+     113,
+     113
+    ],
+    "sweep_dur_s": [
+     11.313471794128418,
+     11.313352346420288,
+     11.314184188842773
+    ],
+    "j_per_task": 40.077528716745675,
+    "j_per_task_sd": 0.5505895052098221,
+    "tok_per_task": 9.708333333333334,
+    "acc": 0.5,
+    "fam_acc": {
+     "acl": 0.9375,
+     "bgp": 0.5,
+     "subnet": 0.0625
+    }
+   },
+   "cot_rows": [
+    {
+     "task": "subnet_00",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 689,
+     "dur_s": 15.95122766494751,
+     "n_samples": 159,
+     "net_j": 2736.8944065413853
+    },
+    {
+     "task": "subnet_01",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 853,
+     "dur_s": 19.788944244384766,
+     "n_samples": 198,
+     "net_j": 3527.3557607523785
+    },
+    {
+     "task": "subnet_02",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 456,
+     "dur_s": 10.531001091003418,
+     "n_samples": 105,
+     "net_j": 1812.8579798250043
+    },
+    {
+     "task": "subnet_03",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 596,
+     "dur_s": 13.783893823623657,
+     "n_samples": 138,
+     "net_j": 2409.3171485125213
+    },
+    {
+     "task": "subnet_04",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 444,
+     "dur_s": 10.25229525566101,
+     "n_samples": 102,
+     "net_j": 1746.4129568954268
+    },
+    {
+     "task": "subnet_05",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 459,
+     "dur_s": 10.603639841079712,
+     "n_samples": 105,
+     "net_j": 1800.775989159656
+    },
+    {
+     "task": "subnet_06",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 461,
+     "dur_s": 10.64918065071106,
+     "n_samples": 107,
+     "net_j": 1841.5053505994274
+    },
+    {
+     "task": "subnet_07",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 553,
+     "dur_s": 12.786760330200195,
+     "n_samples": 128,
+     "net_j": 2218.668662307934
+    },
+    {
+     "task": "subnet_08",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 551,
+     "dur_s": 13.271022081375122,
+     "n_samples": 132,
+     "net_j": 2240.872533166169
+    },
+    {
+     "task": "subnet_09",
+     "family": "subnet",
+     "correct": true,
+     "new_tok": 495,
+     "dur_s": 11.443803548812866,
+     "n_samples": 115,
+     "net_j": 2045.524114309189
+    },
+    {
+     "task": "subnet_10",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 495,
+     "dur_s": 11.440280199050903,
+     "n_samples": 114,
+     "net_j": 2064.4241399741168
+    },
+    {
+     "task": "subnet_11",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 476,
+     "dur_s": 11.00307583808899,
+     "n_samples": 110,
+     "net_j": 1997.562432494994
+    },
+    {
+     "task": "subnet_12",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 310,
+     "dur_s": 7.175357103347778,
+     "n_samples": 72,
+     "net_j": 1241.6380396257728
+    },
+    {
+     "task": "subnet_13",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 694,
+     "dur_s": 16.09542155265808,
+     "n_samples": 161,
+     "net_j": 2932.342613939899
+    },
+    {
+     "task": "subnet_14",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 397,
+     "dur_s": 9.16524887084961,
+     "n_samples": 91,
+     "net_j": 1624.6952257412026
+    },
+    {
+     "task": "subnet_15",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 736,
+     "dur_s": 17.05228328704834,
+     "n_samples": 171,
+     "net_j": 3195.977634863273
+    },
+    {
+     "task": "acl_00",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 249,
+     "dur_s": 5.758169174194336,
+     "n_samples": 57,
+     "net_j": 950.4219474752507
+    },
+    {
+     "task": "acl_01",
+     "family": "acl",
+     "correct": false,
+     "new_tok": 422,
+     "dur_s": 9.77811050415039,
+     "n_samples": 98,
+     "net_j": 1727.9805246948695
+    },
+    {
+     "task": "acl_02",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 480,
+     "dur_s": 11.129483222961426,
+     "n_samples": 111,
+     "net_j": 1968.6588023381582
+    },
+    {
+     "task": "acl_03",
+     "family": "acl",
+     "correct": false,
+     "new_tok": 509,
+     "dur_s": 11.805878400802612,
+     "n_samples": 118,
+     "net_j": 2119.305772495661
+    },
+    {
+     "task": "acl_04",
+     "family": "acl",
+     "correct": false,
+     "new_tok": 438,
+     "dur_s": 10.143954992294312,
+     "n_samples": 101,
+     "net_j": 1786.0154568206062
+    },
+    {
+     "task": "acl_05",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 475,
+     "dur_s": 10.991901397705078,
+     "n_samples": 110,
+     "net_j": 1961.4353056771217
+    },
+    {
+     "task": "acl_06",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 347,
+     "dur_s": 8.026416063308716,
+     "n_samples": 81,
+     "net_j": 1431.7996135147587
+    },
+    {
+     "task": "acl_07",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 246,
+     "dur_s": 5.684751510620117,
+     "n_samples": 56,
+     "net_j": 953.6946268626422
+    },
+    {
+     "task": "acl_08",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 315,
+     "dur_s": 7.281050682067871,
+     "n_samples": 73,
+     "net_j": 1280.1665724443883
+    },
+    {
+     "task": "acl_09",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 264,
+     "dur_s": 6.109878063201904,
+     "n_samples": 61,
+     "net_j": 1034.1041643810877
+    },
+    {
+     "task": "acl_10",
+     "family": "acl",
+     "correct": false,
+     "new_tok": 396,
+     "dur_s": 9.170032739639282,
+     "n_samples": 92,
+     "net_j": 1621.698718953984
+    },
+    {
+     "task": "acl_11",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 585,
+     "dur_s": 13.56753134727478,
+     "n_samples": 135,
+     "net_j": 2438.440252029426
+    },
+    {
+     "task": "acl_12",
+     "family": "acl",
+     "correct": false,
+     "new_tok": 357,
+     "dur_s": 8.26433515548706,
+     "n_samples": 83,
+     "net_j": 1454.014929562576
+    },
+    {
+     "task": "acl_13",
+     "family": "acl",
+     "correct": false,
+     "new_tok": 363,
+     "dur_s": 8.40342378616333,
+     "n_samples": 84,
+     "net_j": 1513.1849727032968
+    },
+    {
+     "task": "acl_14",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 266,
+     "dur_s": 6.148961544036865,
+     "n_samples": 61,
+     "net_j": 1046.222812786073
+    },
+    {
+     "task": "acl_15",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 485,
+     "dur_s": 11.224721431732178,
+     "n_samples": 113,
+     "net_j": 2036.795620683703
+    },
+    {
+     "task": "bgp_00",
+     "family": "bgp",
+     "correct": true,
+     "new_tok": 433,
+     "dur_s": 10.015106916427612,
+     "n_samples": 100,
+     "net_j": 1778.7878218622968
+    },
+    {
+     "task": "bgp_01",
+     "family": "bgp",
+     "correct": true,
+     "new_tok": 264,
+     "dur_s": 6.1070170402526855,
+     "n_samples": 61,
+     "net_j": 1024.8883608999772
+    },
+    {
+     "task": "bgp_02",
+     "family": "bgp",
+     "correct": true,
+     "new_tok": 250,
+     "dur_s": 5.800859451293945,
+     "n_samples": 58,
+     "net_j": 958.4185227848196
+    },
+    {
+     "task": "bgp_03",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 316,
+     "dur_s": 7.344035387039185,
+     "n_samples": 73,
+     "net_j": 1252.928402507846
+    },
+    {
+     "task": "bgp_04",
+     "family": "bgp",
+     "correct": true,
+     "new_tok": 285,
+     "dur_s": 6.617891550064087,
+     "n_samples": 66,
+     "net_j": 1132.4452166396127
+    },
+    {
+     "task": "bgp_05",
+     "family": "bgp",
+     "correct": true,
+     "new_tok": 370,
+     "dur_s": 8.594244241714478,
+     "n_samples": 86,
+     "net_j": 1531.0308665120392
+    },
+    {
+     "task": "bgp_06",
+     "family": "bgp",
+     "correct": true,
+     "new_tok": 313,
+     "dur_s": 7.27402400970459,
+     "n_samples": 73,
+     "net_j": 1272.4911975558766
+    },
+    {
+     "task": "bgp_07",
+     "family": "bgp",
+     "correct": true,
+     "new_tok": 157,
+     "dur_s": 3.6474270820617676,
+     "n_samples": 36,
+     "net_j": 541.3878744312394
+    },
+    {
+     "task": "bgp_08",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 544,
+     "dur_s": 12.665974855422974,
+     "n_samples": 127,
+     "net_j": 2288.289449884721
+    },
+    {
+     "task": "bgp_09",
+     "family": "bgp",
+     "correct": true,
+     "new_tok": 231,
+     "dur_s": 5.365392208099365,
+     "n_samples": 54,
+     "net_j": 916.5164935378166
+    },
+    {
+     "task": "bgp_10",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 372,
+     "dur_s": 8.642323732376099,
+     "n_samples": 86,
+     "net_j": 1530.1752568023453
+    },
+    {
+     "task": "bgp_11",
+     "family": "bgp",
+     "correct": true,
+     "new_tok": 347,
+     "dur_s": 8.059248208999634,
+     "n_samples": 81,
+     "net_j": 1413.041895111659
+    },
+    {
+     "task": "bgp_12",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 130,
+     "dur_s": 3.0248844623565674,
+     "n_samples": 30,
+     "net_j": 448.4249149510939
+    },
+    {
+     "task": "bgp_13",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 374,
+     "dur_s": 8.690404653549194,
+     "n_samples": 87,
+     "net_j": 1520.8619936130838
+    },
+    {
+     "task": "bgp_14",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 320,
+     "dur_s": 7.431388854980469,
+     "n_samples": 74,
+     "net_j": 1280.2004692949072
+    },
+    {
+     "task": "bgp_15",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 302,
+     "dur_s": 7.012516260147095,
+     "n_samples": 70,
+     "net_j": 1204.8640056244371
+    }
+   ],
+   "cot": {
+    "acc": 0.4166666666666667,
+    "fam_acc": {
+     "acl": 0.625,
+     "bgp": 0.5625,
+     "subnet": 0.0625
+    },
+    "n_measurable": 48,
+    "j_per_task": 1684.4899546697027,
+    "j_per_task_sd": 634.5442522352075,
+    "tok_per_task": 413.9583333333333
+   },
+   "energy_multiplier": 42.03078404796623,
+   "j_per_correct_direct": 80.15505743349135,
+   "j_per_correct_cot": 4042.7758912072863
+  },
+  {
+   "repo": "Qwen/Qwen2.5-14B-Instruct",
+   "params_b": 14.0,
+   "dirty": false,
+   "pre_w": 100.35116666666666,
+   "post_w": 104.71233333333333,
+   "drift_w": 4.361166666666676,
+   "direct": {
+    "measurable": true,
+    "sweeps_n_samples": [
+     208,
+     209,
+     208
+    ],
+    "sweep_dur_s": [
+     20.85858678817749,
+     20.85661292076111,
+     20.88136076927185
+    ],
+    "j_per_task": 79.8478474734536,
+    "j_per_task_sd": 0.6920526991015129,
+    "tok_per_task": 9.583333333333334,
+    "acc": 0.5208333333333334,
+    "fam_acc": {
+     "acl": 0.8125,
+     "bgp": 0.6875,
+     "subnet": 0.0625
+    }
+   },
+   "cot_rows": [
+    {
+     "task": "subnet_00",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 665,
+     "dur_s": 29.378177642822266,
+     "n_samples": 294,
+     "net_j": 5492.143561747635
+    },
+    {
+     "task": "subnet_01",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 623,
+     "dur_s": 27.492603540420532,
+     "n_samples": 275,
+     "net_j": 5094.9219776857335
+    },
+    {
+     "task": "subnet_02",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 634,
+     "dur_s": 27.982616901397705,
+     "n_samples": 279,
+     "net_j": 5074.772957750802
+    },
+    {
+     "task": "subnet_03",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 708,
+     "dur_s": 31.288766384124756,
+     "n_samples": 313,
+     "net_j": 5883.608019516238
+    },
+    {
+     "task": "subnet_04",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 478,
+     "dur_s": 21.039427042007446,
+     "n_samples": 210,
+     "net_j": 3865.5642301300763
+    },
+    {
+     "task": "subnet_05",
+     "family": "subnet",
+     "correct": true,
+     "new_tok": 906,
+     "dur_s": 40.17626595497131,
+     "n_samples": 402,
+     "net_j": 7606.086852404244
+    },
+    {
+     "task": "subnet_06",
+     "family": "subnet",
+     "correct": true,
+     "new_tok": 506,
+     "dur_s": 22.278220653533936,
+     "n_samples": 222,
+     "net_j": 4039.5153048348434
+    },
+    {
+     "task": "subnet_07",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 800,
+     "dur_s": 35.40581440925598,
+     "n_samples": 354,
+     "net_j": 6488.429796189732
+    },
+    {
+     "task": "subnet_08",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 790,
+     "dur_s": 34.96146059036255,
+     "n_samples": 350,
+     "net_j": 6648.410529192373
+    },
+    {
+     "task": "subnet_09",
+     "family": "subnet",
+     "correct": true,
+     "new_tok": 618,
+     "dur_s": 27.266870260238647,
+     "n_samples": 272,
+     "net_j": 4975.405476522012
+    },
+    {
+     "task": "subnet_10",
+     "family": "subnet",
+     "correct": true,
+     "new_tok": 763,
+     "dur_s": 33.747408390045166,
+     "n_samples": 337,
+     "net_j": 6185.603917797009
+    },
+    {
+     "task": "subnet_11",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 590,
+     "dur_s": 26.01865267753601,
+     "n_samples": 260,
+     "net_j": 4848.121873907923
+    },
+    {
+     "task": "subnet_12",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 748,
+     "dur_s": 33.07419443130493,
+     "n_samples": 331,
+     "net_j": 6152.07916909845
+    },
+    {
+     "task": "subnet_13",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 453,
+     "dur_s": 19.92594051361084,
+     "n_samples": 199,
+     "net_j": 3540.025073467729
+    },
+    {
+     "task": "subnet_14",
+     "family": "subnet",
+     "correct": false,
+     "new_tok": 493,
+     "dur_s": 21.7016339302063,
+     "n_samples": 217,
+     "net_j": 3973.1279003067825
+    },
+    {
+     "task": "subnet_15",
+     "family": "subnet",
+     "correct": true,
+     "new_tok": 629,
+     "dur_s": 27.75483989715576,
+     "n_samples": 277,
+     "net_j": 5205.542410207909
+    },
+    {
+     "task": "acl_00",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 355,
+     "dur_s": 15.648209571838379,
+     "n_samples": 157,
+     "net_j": 2851.4321695162453
+    },
+    {
+     "task": "acl_01",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 473,
+     "dur_s": 20.93551468849182,
+     "n_samples": 209,
+     "net_j": 3924.0356483045857
+    },
+    {
+     "task": "acl_02",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 488,
+     "dur_s": 21.604299306869507,
+     "n_samples": 216,
+     "net_j": 4021.512062820472
+    },
+    {
+     "task": "acl_03",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 613,
+     "dur_s": 27.19803237915039,
+     "n_samples": 272,
+     "net_j": 5010.43445643934
+    },
+    {
+     "task": "acl_04",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 454,
+     "dur_s": 20.073686838150024,
+     "n_samples": 200,
+     "net_j": 3720.6795393588154
+    },
+    {
+     "task": "acl_05",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 696,
+     "dur_s": 30.860074281692505,
+     "n_samples": 309,
+     "net_j": 5787.791940170886
+    },
+    {
+     "task": "acl_06",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 361,
+     "dur_s": 15.932693243026733,
+     "n_samples": 159,
+     "net_j": 2834.6562465515535
+    },
+    {
+     "task": "acl_07",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 553,
+     "dur_s": 24.4592604637146,
+     "n_samples": 244,
+     "net_j": 4497.69770273773
+    },
+    {
+     "task": "acl_08",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 304,
+     "dur_s": 13.386680841445923,
+     "n_samples": 134,
+     "net_j": 2447.967183371265
+    },
+    {
+     "task": "acl_09",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 217,
+     "dur_s": 9.565586805343628,
+     "n_samples": 96,
+     "net_j": 1714.9421079030424
+    },
+    {
+     "task": "acl_10",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 519,
+     "dur_s": 22.984620809555054,
+     "n_samples": 229,
+     "net_j": 4284.16078628504
+    },
+    {
+     "task": "acl_11",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 683,
+     "dur_s": 30.322534561157227,
+     "n_samples": 303,
+     "net_j": 5743.736698500871
+    },
+    {
+     "task": "acl_12",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 401,
+     "dur_s": 17.72581696510315,
+     "n_samples": 177,
+     "net_j": 3225.9954778744764
+    },
+    {
+     "task": "acl_13",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 670,
+     "dur_s": 29.745383262634277,
+     "n_samples": 297,
+     "net_j": 5746.4718014132995
+    },
+    {
+     "task": "acl_14",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 215,
+     "dur_s": 9.451585531234741,
+     "n_samples": 94,
+     "net_j": 1630.747875443657
+    },
+    {
+     "task": "acl_15",
+     "family": "acl",
+     "correct": true,
+     "new_tok": 590,
+     "dur_s": 26.103527784347534,
+     "n_samples": 261,
+     "net_j": 4900.602549201371
+    },
+    {
+     "task": "bgp_00",
+     "family": "bgp",
+     "correct": true,
+     "new_tok": 272,
+     "dur_s": 11.970447540283203,
+     "n_samples": 120,
+     "net_j": 2247.34381263725
+    },
+    {
+     "task": "bgp_01",
+     "family": "bgp",
+     "correct": true,
+     "new_tok": 269,
+     "dur_s": 11.856269598007202,
+     "n_samples": 118,
+     "net_j": 2092.928503525932
+    },
+    {
+     "task": "bgp_02",
+     "family": "bgp",
+     "correct": true,
+     "new_tok": 210,
+     "dur_s": 9.232838153839111,
+     "n_samples": 93,
+     "net_j": 1600.1807977577055
+    },
+    {
+     "task": "bgp_03",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 380,
+     "dur_s": 16.7735538482666,
+     "n_samples": 167,
+     "net_j": 3094.6628839092264
+    },
+    {
+     "task": "bgp_04",
+     "family": "bgp",
+     "correct": true,
+     "new_tok": 189,
+     "dur_s": 8.30528998374939,
+     "n_samples": 83,
+     "net_j": 1511.866355270267
+    },
+    {
+     "task": "bgp_05",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 272,
+     "dur_s": 11.970097780227661,
+     "n_samples": 120,
+     "net_j": 2239.7556897702625
+    },
+    {
+     "task": "bgp_06",
+     "family": "bgp",
+     "correct": true,
+     "new_tok": 251,
+     "dur_s": 11.054677963256836,
+     "n_samples": 111,
+     "net_j": 1970.9865633153909
+    },
+    {
+     "task": "bgp_07",
+     "family": "bgp",
+     "correct": true,
+     "new_tok": 192,
+     "dur_s": 8.438502550125122,
+     "n_samples": 84,
+     "net_j": 1468.5007346294328
+    },
+    {
+     "task": "bgp_08",
+     "family": "bgp",
+     "correct": true,
+     "new_tok": 281,
+     "dur_s": 12.385986089706421,
+     "n_samples": 124,
+     "net_j": 2278.547825087824
+    },
+    {
+     "task": "bgp_09",
+     "family": "bgp",
+     "correct": true,
+     "new_tok": 298,
+     "dur_s": 13.123583316802979,
+     "n_samples": 131,
+     "net_j": 2457.1543107503267
+    },
+    {
+     "task": "bgp_10",
+     "family": "bgp",
+     "correct": true,
+     "new_tok": 284,
+     "dur_s": 12.53006911277771,
+     "n_samples": 125,
+     "net_j": 2226.280392242152
+    },
+    {
+     "task": "bgp_11",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 354,
+     "dur_s": 15.637185335159302,
+     "n_samples": 156,
+     "net_j": 2748.423379731458
+    },
+    {
+     "task": "bgp_12",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 321,
+     "dur_s": 14.191030263900757,
+     "n_samples": 142,
+     "net_j": 2519.313966754874
+    },
+    {
+     "task": "bgp_13",
+     "family": "bgp",
+     "correct": false,
+     "new_tok": 317,
+     "dur_s": 13.995030879974365,
+     "n_samples": 140,
+     "net_j": 2462.683852896769
+    },
+    {
+     "task": "bgp_14",
+     "family": "bgp",
+     "correct": true,
+     "new_tok": 488,
+     "dur_s": 21.606099605560303,
+     "n_samples": 216,
+     "net_j": 3899.0549963049093
+    },
+    {
+     "task": "bgp_15",
+     "family": "bgp",
+     "correct": true,
+     "new_tok": 120,
+     "dur_s": 5.277514934539795,
+     "n_samples": 53,
+     "net_j": 875.4275094789663
+    }
+   ],
+   "cot": {
+    "acc": 0.6666666666666666,
+    "fam_acc": {
+     "acl": 1.0,
+     "bgp": 0.6875,
+     "subnet": 0.3125
+    },
+    "n_measurable": 48,
+    "j_per_task": 3814.77780980656,
+    "j_per_task_sd": 1651.989409488278,
+    "tok_per_task": 468.625
+   },
+   "energy_multiplier": 47.775587326569195,
+   "j_per_correct_direct": 153.3078671490309,
+   "j_per_correct_cot": 5722.166714709841
+  }
+ ]
+}

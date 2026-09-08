@@ -1,0 +1,73 @@
+120 tasks, 3 templates per condition, cot cap 1024
+waiting for an exclusive GPU ...
+    [opening idle]   84.02 W (sd 0.48, n=200)
+
+=== Qwen/Qwen2.5-1.5B-Instruct (1.5B) ===
+    loaded 2.6 s
+    [resident idle pre]   84.43 W (sd 0.93, n=120)
+    direct tpl0: acc  35.0%     8.61 J/task
+    direct tpl1: acc  37.5%     9.16 J/task
+    direct tpl2: acc  45.0%     9.86 J/task
+    ... cot 30/120
+    ... cot 60/120
+    ... cot 90/120
+    ... cot 120/120
+    [resident idle post]   93.71 W (sd 1.77, n=120)
+    direct acc  39.2%  cot acc  27.5%  delta -11.7 pp   McNemar b=26 c=12 p=0.03355
+    tpl spread  direct [35.0, 37.5, 45.0]  cot [20.0, 32.5, 30.0]
+    energy  direct 9.21 J  cot 623.3 J  x67.7  capped 2%
+
+=== Qwen/Qwen2.5-3B-Instruct (3.0B) ===
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  1.45it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.88it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.80it/s]
+    loaded 2.4 s
+    [resident idle pre]   92.16 W (sd 1.17, n=120)
+    direct tpl0: acc  50.0%    19.10 J/task
+    direct tpl1: acc  50.0%    18.54 J/task
+    direct tpl2: acc  45.0%    19.74 J/task
+    ... cot 30/120
+    ... cot 60/120
+    ... cot 90/120
+    ... cot 120/120
+    [resident idle post]   97.06 W (sd 3.52, n=120)
+    direct acc  48.3%  cot acc  49.2%  delta  +0.8 pp   McNemar b=14 c=15 p=1
+    tpl spread  direct [50.0, 50.0, 45.0]  cot [45.0, 50.0, 52.5]
+    energy  direct 19.13 J  cot 838.8 J  x43.8  capped 0%
+
+=== Qwen/Qwen2.5-7B-Instruct (7.0B) ===
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.01s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.09it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.18it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.27it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.20it/s]
+    loaded 4.6 s
+    [resident idle pre]   93.94 W (sd 1.12, n=120)
+    direct tpl0: acc  55.0%    40.53 J/task
+    direct tpl1: acc  50.0%    39.87 J/task
+    direct tpl2: acc  60.0%    41.53 J/task
+    ... cot 30/120
+    ... cot 60/120
+    ... cot 90/120
+    ... cot 120/120
+    [resident idle post]  106.15 W (sd 7.06, n=120)
+    direct acc  55.0%  cot acc  52.5%  delta  -2.5 pp   McNemar b=18 c=15 p=0.7283
+    tpl spread  direct [55.0, 50.0, 60.0]  cot [45.0, 47.5, 65.0]
+    energy  direct 40.64 J  cot 1925.9 J  x47.4  capped 0%
+
+=== Qwen/Qwen2.5-14B-Instruct (14.0B) ===
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:00<00:05,  1.30it/s]Loading checkpoint shards:  25%|██▌       | 2/8 [00:01<00:04,  1.30it/s]Loading checkpoint shards:  38%|███▊      | 3/8 [00:02<00:03,  1.30it/s]Loading checkpoint shards:  50%|█████     | 4/8 [00:03<00:03,  1.30it/s]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:03<00:02,  1.29it/s]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:04<00:01,  1.28it/s]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:05<00:00,  1.33it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:05<00:00,  1.67it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:05<00:00,  1.42it/s]
+    loaded 7.0 s
+    [resident idle pre]   98.84 W (sd 1.38, n=120)
+    direct tpl0: acc  45.0%    83.36 J/task
+    direct tpl1: acc  55.0%    78.40 J/task
+    direct tpl2: acc  50.0%    81.75 J/task
+    ... cot 30/120
+    ... cot 60/120
+    ... cot 90/120
+    ... cot 120/120
+    [resident idle post]  103.04 W (sd 7.23, n=120)
+    direct acc  50.0%  cot acc  72.5%  delta +22.5 pp   McNemar b=5 c=32 p=7.428e-06
+    tpl spread  direct [45.0, 55.0, 50.0]  cot [75.0, 70.0, 72.5]
+    energy  direct 81.17 J  cot 3909.8 J  x48.2  capped 0%
+
+=== ROBUSTNESS SUMMARY ===
+model         accD    accC   delta  McNemar p    J dir     J cot     xE     tpl spread D/C
+1.5B         39.2%   27.5%  -11.7    0.03355     9.21     623.3  67.7x     4.2 /   5.4 pp
+3B           48.3%   49.2%   +0.8          1    19.13     838.8  43.8x     2.4 /   3.1 pp
+7B           55.0%   52.5%   -2.5     0.7283    40.64    1925.9  47.4x     4.1 /   8.9 pp
+14B          50.0%   72.5%  +22.5  7.428e-06    81.17    3909.8  48.2x     4.1 /   2.0 pp

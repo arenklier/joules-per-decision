@@ -1,0 +1,32 @@
+120 prompts, batches [1, 2, 4, 8, 16, 32, 64], 128 forced tokens each
+waiting for an exclusive GPU ...
+    [opening idle]   87.30 W (sd 0.43)
+
+=== Qwen/Qwen2.5-14B-Instruct (14.0B) ===
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:00<00:06,  1.11it/s]Loading checkpoint shards:  25%|██▌       | 2/8 [00:01<00:04,  1.24it/s]Loading checkpoint shards:  38%|███▊      | 3/8 [00:02<00:03,  1.29it/s]Loading checkpoint shards:  50%|█████     | 4/8 [00:03<00:03,  1.32it/s]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:03<00:02,  1.33it/s]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:04<00:01,  1.34it/s]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:05<00:00,  1.39it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:05<00:00,  1.76it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:05<00:00,  1.45it/s]
+    [resident idle pre]   86.93 W (sd 1.01)
+    batch   1:   5.61 s     857.1 J/batch   857.06 J/req    0.18 req/s     22.8 tok/s  (3/3 olculebilir)
+    batch   2:   6.05 s     866.8 J/batch   433.42 J/req    0.33 req/s     42.3 tok/s  (3/3 olculebilir)
+    batch   4:   6.24 s     925.1 J/batch   231.27 J/req    0.64 req/s     82.1 tok/s  (3/3 olculebilir)
+    batch   8:   6.58 s    1045.3 J/batch   130.67 J/req    1.22 req/s    155.7 tok/s  (3/3 olculebilir)
+    batch  16:   7.15 s    1263.8 J/batch    78.99 J/req    2.24 req/s    286.5 tok/s  (3/3 olculebilir)
+    batch  32:   8.39 s    1790.5 J/batch    55.95 J/req    3.81 req/s    488.2 tok/s  (3/3 olculebilir)
+    batch  64: OOM -- concurrency ceiling reached (CUDA out of memory. Tried to allocate 8.27 GiB. GPU 0 has a ...)
+    [resident idle post]  112.40 W (sd 44.59)
+    best batch 32 -> 55.95 J/req (15.3x better than batch 1)
+           100 req/day:    75167.8 J/req total, idle is  99.9%
+         1,000 req/day:     7567.1 J/req total, idle is  99.3%
+        10,000 req/day:      807.1 J/req total, idle is  93.1%
+       100,000 req/day:      131.1 J/req total, idle is  57.3%
+      1,000,000 req/day:       63.5 J/req total, idle is  11.8%
+
+=== SERVING ECONOMICS ===
+
+14B  (idle 86.9 W, drift 25.47 W, DIRTY)
+   batch     J/req    req/s     tok/s  VRAM GiB
+       1    857.06     0.18      22.8     28.49
+       2    433.42     0.33      42.3     28.58
+       4    231.27     0.64      82.1     28.75
+       8    130.67     1.22     155.7     29.09
+      16     78.99     2.24     286.5     29.78
+      32     55.95     3.81     488.2     31.15

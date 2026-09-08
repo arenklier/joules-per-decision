@@ -1,0 +1,87 @@
+=== global idle baseline (empty GPU) ===
+  [idle]   84.42 W  (sd 0.57, n=200)
+
+=== Qwen/Qwen2.5-1.5B-Instruct  (qwen2.5, 1.5B) ===
+  loaded in 4.5 s, 3.31 GiB
+  [resident idle]   84.52 W  (sd 0.69, n=120)
+  ->    74.7 J/req (sd 6.8, n=9)   0.583 J/tok    58.7 tok/s    118.7 W
+
+=== Qwen/Qwen2.5-3B-Instruct  (qwen2.5, 3.0B) ===
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  1.45it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.87it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.79it/s]
+  loaded in 2.4 s, 6.42 GiB
+  [resident idle]   86.25 W  (sd 0.76, n=120)
+  ->   162.4 J/req (sd 10.3, n=9)   1.269 J/tok    46.4 tok/s    143.4 W
+
+=== Qwen/Qwen2.5-7B-Instruct  (qwen2.5, 7.0B) ===
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.02s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.07it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.14it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.21it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.16it/s]
+  loaded in 4.8 s, 14.67 GiB
+  [resident idle]   87.00 W  (sd 0.96, n=120)
+  ->   375.6 J/req (sd 21.0, n=9)   2.935 J/tok    43.3 tok/s    211.5 W
+
+=== Qwen/Qwen2.5-14B-Instruct  (qwen2.5, 14.0B) ===
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:13,  1.98s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:02<00:07,  1.26s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:03<00:05,  1.04s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:04<00:03,  1.07it/s]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:05<00:02,  1.14it/s]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:05<00:01,  1.18it/s]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:06<00:00,  1.23it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:06<00:00,  1.54it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:06<00:00,  1.16it/s]
+  loaded in 8.9 s, 28.41 GiB
+  [resident idle]  109.72 W  (sd 39.80, n=120)
+  ->  1413.0 J/req (sd 45.9, n=9)   11.039 J/tok    17.1 tok/s    273.6 W
+
+=== NousResearch/Meta-Llama-3.1-8B-Instruct  (llama3.1, 8.0B) ===
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:04<00:12,  4.18s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:07<00:07,  3.77s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:09<00:02,  2.86s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:10<00:00,  2.01s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:10<00:00,  2.53s/it]
+  loaded in 12.4 s, 14.97 GiB
+  [resident idle]  198.58 W  (sd 37.87, n=120)
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  ->   720.9 J/req (sd 31.0, n=9)   5.632 J/tok    32.5 tok/s    267.4 W
+
+=== mistralai/Mistral-7B-Instruct-v0.2  (mistral, 7.0B) ===
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:04<00:08,  4.45s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:07<00:03,  3.83s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:10<00:00,  3.51s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:10<00:00,  3.66s/it]
+  loaded in 12.4 s, 13.50 GiB
+  [resident idle]  186.15 W  (sd 41.31, n=120)
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+  ->   770.1 J/req (sd 32.7, n=9)   6.016 J/tok    30.7 tok/s    269.1 W
+
+=== microsoft/Phi-3.5-mini-instruct  (phi3.5, 3.8B) ===
+A new version of the following files was downloaded from https://huggingface.co/microsoft/Phi-3.5-mini-instruct:
+- configuration_phi3.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+A new version of the following files was downloaded from https://huggingface.co/microsoft/Phi-3.5-mini-instruct:
+- modeling_phi3.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+`flash-attention` package not found, consider installing for better performance: No module named 'flash_attn'.
+Current `flash-attention` does not support `window_size`. Either upgrade or use `attn_implementation='eager'`.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:04<00:04,  4.86s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.56s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.75s/it]
+  loaded in 10.1 s, 7.13 GiB
+  [resident idle]  184.41 W  (sd 43.98, n=120)
+The `seen_tokens` attribute is deprecated and will be removed in v4.41. Use the `cache_position` model input instead.
+You are not running the flash-attention implementation, expect numerical differences.
+  ->   631.0 J/req (sd 46.9, n=9)   4.930 J/tok    26.6 tok/s    215.4 W
+
+=== closing idle baseline (drift check) ===
+  [idle]  191.59 W  (sd 36.18, n=150)
+  drift over run: +107.17 W
+
+=== SUMMARY ===
+model                                            B     J/req    J/tok   tok/s       W
+Qwen/Qwen2.5-1.5B-Instruct                     1.5      74.7    0.583    58.7   118.7
+Qwen/Qwen2.5-3B-Instruct                       3.0     162.4    1.269    46.4   143.4
+Qwen/Qwen2.5-7B-Instruct                       7.0     375.6    2.935    43.3   211.5
+Qwen/Qwen2.5-14B-Instruct                     14.0    1413.0   11.039    17.1   273.6
+NousResearch/Meta-Llama-3.1-8B-Instruct        8.0     720.9    5.632    32.5   267.4
+mistralai/Mistral-7B-Instruct-v0.2             7.0     770.1    6.016    30.7   269.1
+microsoft/Phi-3.5-mini-instruct                3.8     631.0    4.930    26.6   215.4

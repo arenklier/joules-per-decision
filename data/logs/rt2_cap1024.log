@@ -1,0 +1,70 @@
+48 tasks; majority-class baseline overall 33.3% ({'acl': 56.2, 'bgp': 37.5, 'subnet': 6.2})
+waiting for an exclusive GPU ...
+    [opening idle]   88.31 W (sd 0.64, n=200)
+
+=== Qwen/Qwen2.5-1.5B-Instruct (1.5B) ===
+    loaded 2.6 s
+    [resident idle pre]   87.84 W (sd 1.02, n=120)
+    direct sweep 1:   7.21 s, 72 samples, 420.8 J total
+    direct sweep 2:   7.16 s, 72 samples, 435.0 J total
+    direct sweep 3:   7.13 s, 71 samples, 441.8 J total
+    ... cot 16/48
+    ... cot 32/48
+    ... cot 48/48
+    [resident idle post]   94.59 W (sd 2.53, n=120)
+    direct: acc  43.8%      9.01 J/task     8.7 tok  {'acl': 0.75, 'bgp': 0.4375, 'subnet': 0.125}
+    cot   : acc  22.9%    565.91 J/task   511.2 tok  {'acl': 0.5625, 'bgp': 0.125, 'subnet': 0.0}
+    energy multiplier: 62.8x
+
+=== Qwen/Qwen2.5-3B-Instruct (3.0B) ===
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  1.30it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.70it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.63it/s]
+    loaded 2.5 s
+    [resident idle pre]   92.44 W (sd 1.08, n=120)
+    direct sweep 1:  10.37 s, 103 samples, 907.4 J total
+    direct sweep 2:  10.41 s, 104 samples, 919.7 J total
+    direct sweep 3:  10.41 s, 104 samples, 927.8 J total
+    ... cot 16/48
+    ... cot 32/48
+    ... cot 48/48
+    [resident idle post]   98.04 W (sd 3.00, n=120)
+    direct: acc  43.8%     19.13 J/task     9.9 tok  {'acl': 0.9375, 'bgp': 0.3125, 'subnet': 0.0625}
+    cot   : acc  33.3%    871.80 J/task   446.7 tok  {'acl': 0.75, 'bgp': 0.1875, 'subnet': 0.0625}
+    energy multiplier: 45.6x
+
+=== Qwen/Qwen2.5-7B-Instruct (7.0B) ===
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.03s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.06it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.11it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.17it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.13it/s]
+    loaded 4.8 s
+    [resident idle pre]   95.32 W (sd 1.18, n=119)
+    direct sweep 1:  11.31 s, 113 samples, 1893.4 J total
+    direct sweep 2:  11.31 s, 113 samples, 1920.0 J total
+    direct sweep 3:  11.31 s, 113 samples, 1957.8 J total
+    ... cot 16/48
+    ... cot 32/48
+    ... cot 48/48
+    [resident idle post]  106.77 W (sd 7.01, n=120)
+    direct: acc  50.0%     40.08 J/task     9.7 tok  {'acl': 0.9375, 'bgp': 0.5, 'subnet': 0.0625}
+    cot   : acc  41.7%   1684.49 J/task   414.0 tok  {'acl': 0.625, 'bgp': 0.5625, 'subnet': 0.0625}
+    energy multiplier: 42.0x
+
+=== Qwen/Qwen2.5-14B-Instruct (14.0B) ===
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:00<00:05,  1.22it/s]Loading checkpoint shards:  25%|██▌       | 2/8 [00:01<00:04,  1.28it/s]Loading checkpoint shards:  38%|███▊      | 3/8 [00:02<00:03,  1.31it/s]Loading checkpoint shards:  50%|█████     | 4/8 [00:03<00:03,  1.31it/s]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:03<00:02,  1.31it/s]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:04<00:01,  1.32it/s]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:05<00:00,  1.33it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:05<00:00,  1.64it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:05<00:00,  1.42it/s]
+    loaded 7.0 s
+    [resident idle pre]  100.35 W (sd 1.44, n=120)
+    direct sweep 1:  20.86 s, 208 samples, 3785.8 J total
+    direct sweep 2:  20.86 s, 209 samples, 3859.0 J total
+    direct sweep 3:  20.88 s, 208 samples, 3853.2 J total
+    ... cot 16/48
+    ... cot 32/48
+    ... cot 48/48
+    [resident idle post]  104.71 W (sd 6.81, n=120)
+    direct: acc  52.1%     79.85 J/task     9.6 tok  {'acl': 0.8125, 'bgp': 0.6875, 'subnet': 0.0625}
+    cot   : acc  66.7%   3814.78 J/task   468.6 tok  {'acl': 1.0, 'bgp': 0.6875, 'subnet': 0.3125}
+    energy multiplier: 47.8x
+
+=== REASONING TAX ===
+majority-class baseline: 33.3%
+model                       acc dir  acc cot    J dir     J cot      xE  J/corr dir  J/corr cot
+Qwen2.5-1.5B-Instruct         43.8%    22.9%      9.0     565.9    62.8        20.6      2469.4
+Qwen2.5-3B-Instruct           43.8%    33.3%     19.1     871.8    45.6        43.7      2615.4
+Qwen2.5-7B-Instruct           50.0%    41.7%     40.1    1684.5    42.0        80.2      4042.8
+Qwen2.5-14B-Instruct          52.1%    66.7%     79.8    3814.8    47.8       153.3      5722.2

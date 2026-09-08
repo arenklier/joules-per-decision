@@ -1,0 +1,175 @@
+=== queued: waiting for an exclusive GPU ===
+  [queue] free (85.7 W) 1/3
+  [queue] free (85.8 W) 2/3
+  [queue] free (84.7 W) 3/3
+=== GPU free, starting ===
+    [opening idle]   84.86 W (sd 0.42, n=200)
+
+=== Qwen/Qwen2.5-1.5B-Instruct (qwen2.5, 1.5B) ===
+    loaded 3.0 s, 3.31 GiB
+    [resident idle pre]   85.25 W (sd 0.89, n=120)
+    [resident idle post]   86.08 W (sd 0.56, n=120)
+    ->     77.0 J/req (sd 9.1, n=9)    0.602 J/tok   59.7 tok/s   121.2 W  drift +0.82 W
+
+=== Qwen/Qwen2.5-3B-Instruct (qwen2.5, 3.0B) ===
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  1.43it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.86it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.78it/s]
+    loaded 2.3 s, 6.42 GiB
+    [resident idle pre]   86.99 W (sd 0.71, n=120)
+    [resident idle post]   87.54 W (sd 1.04, n=119)
+    ->    158.5 J/req (sd 6.9, n=9)    1.238 J/tok   46.3 tok/s   144.3 W  drift +0.55 W
+
+=== Qwen/Qwen2.5-7B-Instruct (qwen2.5, 7.0B) ===
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.01it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.12it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.20it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.29it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.23it/s]
+    loaded 4.7 s, 14.67 GiB
+    [resident idle pre]   87.16 W (sd 0.85, n=120)
+    [resident idle post]   90.57 W (sd 1.72, n=120)
+    ->    364.4 J/req (sd 16.7, n=9)    2.847 J/tok   43.4 tok/s   210.8 W  drift +3.41 W
+
+=== Qwen/Qwen2.5-14B-Instruct (qwen2.5, 14.0B) ===
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:00<00:04,  1.70it/s]Loading checkpoint shards:  25%|██▌       | 2/8 [00:01<00:04,  1.47it/s]Loading checkpoint shards:  38%|███▊      | 3/8 [00:02<00:03,  1.41it/s]Loading checkpoint shards:  50%|█████     | 4/8 [00:02<00:02,  1.39it/s]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:03<00:02,  1.36it/s]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:04<00:01,  1.35it/s]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:04<00:00,  1.39it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:05<00:00,  1.75it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:05<00:00,  1.52it/s]
+    loaded 6.7 s, 28.41 GiB
+    [resident idle pre]   89.41 W (sd 1.04, n=120)
+    [resident idle post]   94.63 W (sd 1.97, n=119)
+    DIRTY (drift 5.2 W) -- discarding attempt 1
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:00<00:04,  1.69it/s]Loading checkpoint shards:  25%|██▌       | 2/8 [00:01<00:04,  1.47it/s]Loading checkpoint shards:  38%|███▊      | 3/8 [00:02<00:03,  1.41it/s]Loading checkpoint shards:  50%|█████     | 4/8 [00:02<00:02,  1.38it/s]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:03<00:02,  1.36it/s]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:04<00:01,  1.35it/s]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:05<00:00,  1.39it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:05<00:00,  1.75it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:05<00:00,  1.52it/s]
+    loaded 6.8 s, 28.41 GiB
+    [resident idle pre]   93.16 W (sd 0.95, n=119)
+    [resident idle post]   96.00 W (sd 0.80, n=120)
+    DIRTY (pre-baseline 93.2 W vs open 84.9 W) -- discarding attempt 2
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:00<00:04,  1.70it/s]Loading checkpoint shards:  25%|██▌       | 2/8 [00:01<00:04,  1.48it/s]Loading checkpoint shards:  38%|███▊      | 3/8 [00:02<00:03,  1.42it/s]Loading checkpoint shards:  50%|█████     | 4/8 [00:02<00:02,  1.39it/s]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:03<00:02,  1.37it/s]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:04<00:01,  1.36it/s]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:04<00:00,  1.40it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:05<00:00,  1.75it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:05<00:00,  1.53it/s]
+    loaded 6.6 s, 28.41 GiB
+    [resident idle pre]   93.59 W (sd 1.25, n=120)
+    [resident idle post]   96.66 W (sd 0.74, n=120)
+    DIRTY (pre-baseline 93.6 W vs open 84.9 W) -- discarding attempt 3
+
+=== NousResearch/Meta-Llama-3.1-8B-Instruct (llama3.1, 8.0B) ===
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:04,  1.40s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:04,  2.05s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:06<00:02,  2.43s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.72s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.85s/it]
+    loaded 8.7 s, 14.97 GiB
+    [resident idle pre]   94.24 W (sd 0.83, n=120)
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+    [resident idle post]   94.78 W (sd 2.47, n=120)
+    DIRTY (pre-baseline 94.2 W vs open 84.9 W) -- discarding attempt 1
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.10s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.10s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.09s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.28it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.12it/s]
+    loaded 4.5 s, 14.97 GiB
+    [resident idle pre]   93.00 W (sd 1.02, n=120)
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+    [resident idle post]   94.34 W (sd 0.62, n=120)
+    DIRTY (pre-baseline 93.0 W vs open 84.9 W) -- discarding attempt 2
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.11s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.10s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.09s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.29it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.12it/s]
+    loaded 4.5 s, 14.97 GiB
+    [resident idle pre]   92.97 W (sd 1.06, n=120)
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+    [resident idle post]   94.32 W (sd 1.88, n=120)
+    DIRTY (pre-baseline 93.0 W vs open 84.9 W) -- discarding attempt 3
+
+=== mistralai/Mistral-7B-Instruct-v0.2 (mistral, 7.0B) ===
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.26s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:02<00:01,  1.13s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:03<00:00,  1.05s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:03<00:00,  1.09s/it]
+    loaded 4.2 s, 13.50 GiB
+    [resident idle pre]   92.72 W (sd 0.96, n=120)
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+    [resident idle post]   94.04 W (sd 1.79, n=120)
+    DIRTY (pre-baseline 92.7 W vs open 84.9 W) -- discarding attempt 1
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.08s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:02<00:01,  1.04s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:03<00:00,  1.01s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:03<00:00,  1.02s/it]
+    loaded 3.8 s, 13.50 GiB
+    [resident idle pre]   93.13 W (sd 0.78, n=120)
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+    [resident idle post]   93.90 W (sd 1.80, n=120)
+    DIRTY (pre-baseline 93.1 W vs open 84.9 W) -- discarding attempt 2
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.09s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:02<00:01,  1.05s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:03<00:00,  1.01s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:03<00:00,  1.03s/it]
+    loaded 3.7 s, 13.50 GiB
+    [resident idle pre]   92.55 W (sd 1.03, n=119)
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+    [resident idle post]   93.74 W (sd 0.60, n=119)
+    DIRTY (pre-baseline 92.6 W vs open 84.9 W) -- discarding attempt 3
+
+=== microsoft/Phi-3.5-mini-instruct (phi3.5, 3.8B) ===
+`flash-attention` package not found, consider installing for better performance: No module named 'flash_attn'.
+Current `flash-attention` does not support `window_size`. Either upgrade or use `attn_implementation='eager'`.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.02s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.34it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.27it/s]
+    loaded 2.9 s, 7.13 GiB
+    [resident idle pre]   91.92 W (sd 1.01, n=120)
+The `seen_tokens` attribute is deprecated and will be removed in v4.41. Use the `cache_position` model input instead.
+You are not running the flash-attention implementation, expect numerical differences.
+    [resident idle post]   91.21 W (sd 0.59, n=120)
+    DIRTY (pre-baseline 91.9 W vs open 84.9 W) -- discarding attempt 1
+`flash-attention` package not found, consider installing for better performance: No module named 'flash_attn'.
+Current `flash-attention` does not support `window_size`. Either upgrade or use `attn_implementation='eager'`.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.04s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.32it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.25it/s]
+    loaded 2.7 s, 7.13 GiB
+    [resident idle pre]   90.18 W (sd 0.93, n=120)
+    [resident idle post]   90.10 W (sd 0.56, n=120)
+    DIRTY (pre-baseline 90.2 W vs open 84.9 W) -- discarding attempt 2
+`flash-attention` package not found, consider installing for better performance: No module named 'flash_attn'.
+Current `flash-attention` does not support `window_size`. Either upgrade or use `attn_implementation='eager'`.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.04s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.32it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.25it/s]
+    loaded 2.7 s, 7.13 GiB
+    [resident idle pre]   89.37 W (sd 0.99, n=120)
+    [resident idle post]   89.79 W (sd 1.18, n=120)
+    ->    220.3 J/req (sd 7.4, n=9)    1.721 J/tok   32.8 tok/s   145.9 W  drift +0.41 W
+    [closing idle]   89.40 W (sd 0.68, n=150)
+
+idle drift over whole run: +4.54 W
+
+=== SUMMARY (clean cells only) ===
+model                                            B     J/req    J/tok   tok/s       W   drift
+Qwen/Qwen2.5-1.5B-Instruct                     1.5      77.0    0.602    59.7   121.2   +0.82
+Qwen/Qwen2.5-3B-Instruct                       3.0     158.5    1.238    46.3   144.3   +0.55
+Qwen/Qwen2.5-7B-Instruct                       7.0     364.4    2.847    43.4   210.8   +3.41
+Qwen/Qwen2.5-14B-Instruct                     14.0   DISCARDED: pre-baseline 93.6 W vs open 84.9 W
+NousResearch/Meta-Llama-3.1-8B-Instruct        8.0   DISCARDED: pre-baseline 93.0 W vs open 84.9 W
+mistralai/Mistral-7B-Instruct-v0.2             7.0   DISCARDED: pre-baseline 92.6 W vs open 84.9 W
+microsoft/Phi-3.5-mini-instruct                3.8     220.3    1.721    32.8   145.9   +0.41
