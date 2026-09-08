@@ -1,0 +1,61 @@
+60 NetArena tasks, base prompt 3017 chars, caps base=768 cot=2048
+waiting for an exclusive GPU ...
+    [opening idle]   83.78 W (sd 0.41, n=200)
+
+=== Qwen/Qwen2.5-1.5B-Instruct (1.5B) ===
+    loaded 1.8 s
+    [resident idle pre]   84.34 W (sd 0.96, n=120)
+    ... 15/60
+    ... 30/60
+    ... 45/60
+    ... 60/60
+    [resident idle post]   94.40 W (sd 2.68, n=120)
+    base :    413.9 J/task     812 prompt tok   358.1 new tok     3% capped   58.4 tok/s
+    cot  :    415.5 J/task     822 prompt tok   357.5 new tok     0% capped   58.4 tok/s
+    CoT energy multiplier: 1.0x
+
+=== Qwen/Qwen2.5-3B-Instruct (3.0B) ===
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  1.44it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.87it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.79it/s]
+    loaded 1.7 s
+    [resident idle pre]   92.43 W (sd 1.24, n=120)
+    ... 15/60
+    ... 30/60
+    ... 45/60
+    ... 60/60
+    [resident idle post]   99.69 W (sd 3.81, n=120)
+    base :    570.8 J/task     812 prompt tok   292.4 new tok     0% capped   45.7 tok/s
+    cot  :    600.6 J/task     822 prompt tok   299.7 new tok     0% capped   45.7 tok/s
+    CoT energy multiplier: 1.1x
+
+=== Qwen/Qwen2.5-7B-Instruct (7.0B) ===
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.01s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.11it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.20it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.28it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.22it/s]
+    loaded 3.7 s
+    [resident idle pre]   96.14 W (sd 1.42, n=120)
+    ... 15/60
+    ... 30/60
+    ... 45/60
+    ... 60/60
+    [resident idle post]  105.01 W (sd 8.43, n=120)
+    base :   1059.0 J/task     812 prompt tok   262.9 new tok     0% capped   42.2 tok/s
+    cot  :   1056.7 J/task     822 prompt tok   260.4 new tok     0% capped   42.2 tok/s
+    CoT energy multiplier: 1.0x
+
+=== Qwen/Qwen2.5-14B-Instruct (14.0B) ===
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:00<00:05,  1.30it/s]Loading checkpoint shards:  25%|██▌       | 2/8 [00:01<00:04,  1.32it/s]Loading checkpoint shards:  38%|███▊      | 3/8 [00:02<00:03,  1.33it/s]Loading checkpoint shards:  50%|█████     | 4/8 [00:03<00:03,  1.32it/s]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:03<00:02,  1.32it/s]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:04<00:01,  1.32it/s]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:05<00:00,  1.36it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:05<00:00,  1.71it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:05<00:00,  1.46it/s]
+    loaded 6.2 s
+    [resident idle pre]   99.00 W (sd 1.60, n=119)
+    ... 15/60
+    ... 30/60
+    ... 45/60
+    ... 60/60
+    [resident idle post]  101.42 W (sd 7.01, n=119)
+    base :   2247.5 J/task     812 prompt tok   268.8 new tok     0% capped   22.0 tok/s
+    cot  :   2300.5 J/task     822 prompt tok   275.0 new tok     0% capped   22.0 tok/s
+    CoT energy multiplier: 1.0x
+
+=== NETARENA ENERGY (no accuracy claimed) ===
+model         J base     J cot     xE  tok base  tok cot    cap b/c   drift
+1.5B           413.9     415.5   1.0x     358.1    357.5    3%/  0%  10.05W  DIRTY
+3B             570.8     600.6   1.1x     292.4    299.7    0%/  0%   7.26W  DIRTY
+7B            1059.0    1056.7   1.0x     262.9    260.4    0%/  0%   8.87W  DIRTY
+14B           2247.5    2300.5   1.0x     268.8    275.0    0%/  0%   2.42W

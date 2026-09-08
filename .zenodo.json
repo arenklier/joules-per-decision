@@ -1,0 +1,27 @@
+{
+  "title": "Joules per Decision: Measuring the Energy Cost of LLM Agents in Network Operations — measurement code and results",
+  "upload_type": "software",
+  "description": "<p>Measurement code, per-task result files, and analysis scripts accompanying the paper <em>Joules per Decision: Measuring the Energy Cost of LLM Agents in Network Operations</em>.</p><p>GPU board power is sampled at 10 Hz with a streaming <code>nvidia-smi</code> process and integrated over wall-clock time, net of a per-cell idle baseline, while four Qwen2.5 sizes perform subnet arithmetic, ACL rule evaluation, and BGP best-path selection, on a datacenter accelerator and an edge-class card, and on the NetArena benchmark. The deposit includes the power sampler, the task generator and its grading function, the independent ground-truth re-derivation, the grading-rule audit, the statistical analyses, and the figure-generation code.</p><p>All energy figures are GPU board power only; host, power-supply, cooling, and facility overheads are outside the instrument.</p>",
+  "creators": [
+    {
+      "name": "Renklier, Ayhan",
+      "affiliation": "Kayseri University"
+    },
+    {
+      "name": "Mercan, Hasan",
+      "affiliation": "Kayseri University",
+      "orcid": "0009-0001-9748-4544"
+    }
+  ],
+  "keywords": [
+    "LLM energy measurement",
+    "network automation",
+    "edge-cloud placement",
+    "carbon-aware scheduling",
+    "GPU power profiling",
+    "chain-of-thought",
+    "NetOps"
+  ],
+  "license": "mit",
+  "access_right": "open"
+}

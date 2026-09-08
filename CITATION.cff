@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: >-
+  Joules per Decision: Measuring the Energy Cost of LLM Agents in Network
+  Operations — measurement code and results
+message: >-
+  If you use this software or these measurements, please cite both this
+  deposit and the paper it accompanies.
+type: software
+authors:
+  - given-names: Ayhan
+    family-names: Renklier
+    affiliation: Kayseri University
+    email: ayhan@kayseri.edu.tr
+  - given-names: Hasan
+    family-names: Mercan
+    affiliation: Kayseri University
+    orcid: 'https://orcid.org/0009-0001-9748-4544'
+keywords:
+  - LLM energy measurement
+  - network automation
+  - edge-cloud placement
+  - carbon-aware scheduling
+  - GPU power profiling
+  - NetOps
