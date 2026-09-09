@@ -6,6 +6,10 @@ message: >-
   If you use this software or these measurements, please cite both this
   deposit and the paper it accompanies.
 type: software
+doi: 10.5281/zenodo.22666117
+repository-code: 'https://github.com/arenklier/joules-per-decision'
+license: MIT
+version: v1.0.0
 authors:
   - given-names: Ayhan
     family-names: Renklier

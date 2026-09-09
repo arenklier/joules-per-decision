@@ -1,7 +1,13 @@
 # Joules per Decision
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22666117.svg)](https://doi.org/10.5281/zenodo.22666117)
+
 Measurement code, raw results, and analysis scripts for *Joules per Decision:
 Measuring the Energy Cost of LLM Agents in Network Operations*.
+
+The archived, immutable copy is at
+[10.5281/zenodo.22666117](https://doi.org/10.5281/zenodo.22666117). Cite that
+rather than this branch, which can move.
 
 The paper measures GPU board power while language models perform network
 operations tasks — subnet arithmetic, ACL rule evaluation, and BGP best-path
