@@ -1,7 +1,13 @@
 """Static PDF figures for the manuscript, redrawn from the measured tables
-(not exported from the interactive HTML report). Grayscale-safe: every series
-is distinguished by marker/linestyle, not only by color, since a print
-reviewer may see this in black and white.
+(not exported from the interactive HTML report).
+
+Colour carries no information on its own here. Every series is also
+distinguished by marker and linestyle, so a reviewer printing this in black
+and white loses nothing, and the palette is Okabe-Ito, which stays separable
+under the common forms of colour vision deficiency. Figure 2 is the one place
+where fill is doing semantic work (which cells survive correction), so it uses
+one hue plus a hatch rather than a colour scale, to avoid implying that a
+non-significant cell is a bad one.
 """
 import matplotlib
 matplotlib.use("Agg")
@@ -22,6 +28,14 @@ plt.rcParams.update({
 
 OUT = "."
 
+# Okabe-Ito qualitative palette: separable under deuteranopia, protanopia and
+# tritanopia, and distinct in greyscale by luminance.
+BLUE = "#0072B2"
+ORANGE = "#E69F00"
+GREEN = "#009E73"
+VERMILLION = "#D55E00"
+SKY = "#56B4E9"
+
 # ---------------------------------------------------------------- Figure 1
 # Energy scaling law (Table 1)
 models = ["Qwen2.5-1.5B", "Qwen2.5-3B", "Phi-3.5-mini", "Mistral-7B-v0.2",
@@ -32,10 +46,11 @@ is_qwen = np.array([1, 1, 0, 0, 1, 0, 1], dtype=bool)
 
 fig, ax = plt.subplots(figsize=(5.2, 4.0))
 ax.scatter(params[is_qwen], j_per_tok[is_qwen], marker="o", s=55,
-           facecolors="none", edgecolors="black", linewidths=1.3,
+           facecolors="none", edgecolors=BLUE, linewidths=1.6,
            label="Qwen2.5 ladder", zorder=3)
 ax.scatter(params[~is_qwen], j_per_tok[~is_qwen], marker="^", s=55,
-           color="black", label="other families", zorder=3)
+           color=ORANGE, edgecolors="black", linewidths=0.5,
+           label="other families", zorder=3)
 xs = np.linspace(1, 15, 100)
 ax.plot(xs, 0.42 * xs ** 1.08 / xs, linestyle="--", color="gray", linewidth=1,
         zorder=1)  # placeholder overwritten below with a proper power fit
@@ -65,25 +80,28 @@ plt.close(fig)
 # CoT accuracy delta by scale (Table 3)
 sizes = ["1.5B", "3B", "7B", "14B"]
 delta = [-11.7, 0.8, -2.5, 22.5]
-pvals = [0.034, 1.00, 0.73, 7.4e-6]
-sig = [p < 0.05 for p in pvals]
+# Holm-adjusted across the four sizes, matching the text. The raw 1.5B value
+# is p=0.034, which would read as significant here; it does not survive
+# correction, and the figure must not claim what the analysis withdraws.
+padj = [0.101, 1.00, 1.00, 3.0e-5]
+sig = [p < 0.05 for p in padj]
 
 fig, ax = plt.subplots(figsize=(5.6, 3.4))
-colors = ["black" if s else "0.85" for s in sig]
+colors = [BLUE if s else "white" for s in sig]
 hatches = [None if s else "//" for s in sig]
-bars = ax.barh(sizes, delta, color=colors, edgecolor="black", height=0.55)
+bars = ax.barh(sizes, delta, color=colors, edgecolor=BLUE, height=0.55,
+               linewidth=1.2)
 for bar, h in zip(bars, hatches):
     if h:
         bar.set_hatch(h)
-        bar.set_facecolor("white")
 ax.axvline(0, color="black", linewidth=0.8)
 ax.set_xlim(-16, 30)
 # Labels sit just to the right of zero, at a fixed x position, regardless of
 # bar direction -- this keeps every label inside the axes and clear of the
 # y-axis category ticks, unlike anchoring to each bar's own far end.
 label_x = 24
-for i, (d, p, s) in enumerate(zip(delta, pvals, sig)):
-    label = f"{d:+.1f}  (p={p:.2g})" if s else f"{d:+.1f}  (n.s.)"
+for i, (d, p, s) in enumerate(zip(delta, padj, sig)):
+    label = f"{d:+.1f}  ($p_{{adj}}$={p:.2g})" if s else f"{d:+.1f}  (n.s.)"
     ax.text(label_x, i, label, va="center", ha="left", fontsize=8.5)
 ax.set_xlabel("Accuracy change from chain-of-thought (percentage points)")
 ax.set_ylabel("Model size")
@@ -97,9 +115,9 @@ rates = [100, 1000, 10000, 100000, 1000000]
 idle_share_14b = [99.9, 99.3, 93.1, 57.3, 11.8]
 
 fig, ax = plt.subplots(figsize=(5.2, 3.6))
-ax.plot(rates, idle_share_14b, marker="o", color="black", linewidth=1.5,
+ax.plot(rates, idle_share_14b, marker="o", color=BLUE, linewidth=1.8,
         markersize=6)
-ax.fill_between(rates, idle_share_14b, color="0.85", zorder=0)
+ax.fill_between(rates, idle_share_14b, color=SKY, alpha=0.35, zorder=0)
 ax.set_xscale("log")
 ax.set_xlabel("Requests per day")
 ax.set_ylabel("Idle power's share of total energy (%)")
@@ -123,12 +141,12 @@ centre = [150331, 15138, 1618, 266, 131]
 shared = [131, 131, 131, 131, 131]
 
 fig, ax = plt.subplots(figsize=(5.4, 4.0))
-ax.plot(rates2, edge, marker="o", linestyle="-", color="black",
-        label="Edge (dedicated)", linewidth=1.5)
-ax.plot(rates2, centre, marker="^", linestyle="--", color="black",
-        label="Datacenter (dedicated)", linewidth=1.5)
-ax.plot(rates2, shared, marker="s", linestyle=":", color="0.4",
-        label="Datacenter, shared (1M/day)", linewidth=1.5)
+ax.plot(rates2, edge, marker="o", linestyle="-", color=BLUE,
+        label="Edge (dedicated)", linewidth=1.8)
+ax.plot(rates2, centre, marker="^", linestyle="--", color=ORANGE,
+        label="Datacenter (dedicated)", linewidth=1.8)
+ax.plot(rates2, shared, marker="s", linestyle=":", color=GREEN,
+        label="Datacenter, shared (1M/day)", linewidth=1.8)
 ax.set_xscale("log")
 ax.set_yscale("log")
 ax.set_xlabel("Requests per day")
@@ -146,12 +164,12 @@ hourly = [366.6, 376.2, 384.4, 389.5, 396.2, 402.8, 411.9, 406.0, 389.0, 386.2,
 hours = list(range(24))
 
 fig, ax = plt.subplots(figsize=(5.4, 3.6))
-ax.plot(hours, hourly, color="black", linewidth=1.5)
+ax.plot(hours, hourly, color=BLUE, linewidth=1.8)
 best_h, worst_h = 16, 6
-ax.scatter([best_h], [hourly[best_h]], color="black", zorder=5, s=60,
-           marker="o")
-ax.scatter([worst_h], [hourly[worst_h]], color="black", zorder=5, s=60,
-           marker="^")
+ax.scatter([best_h], [hourly[best_h]], color=GREEN, zorder=5, s=70,
+           marker="o", edgecolors="black", linewidths=0.6)
+ax.scatter([worst_h], [hourly[worst_h]], color=VERMILLION, zorder=5, s=70,
+           marker="^", edgecolors="black", linewidths=0.6)
 ax.annotate("cleanest\n16:00", (best_h, hourly[best_h]),
             textcoords="offset points", xytext=(18, 8), fontsize=8.5,
             ha="left")
