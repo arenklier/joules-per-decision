@@ -139,6 +139,10 @@ rates2 = [100, 1000, 10000, 100000, 1000000]
 edge = [27027, 2743, 315, 72, 48]
 centre = [150331, 15138, 1618, 266, 131]
 shared = [131, 131, 131, 131, 131]
+# The shared-EDGE line is what the dedicated-versus-shared conclusion turns on;
+# leaving it out of the plot let the figure argue against the paper's own
+# headline, since the shared-centre line then appears to beat the edge arm.
+shared_edge = [48, 48, 48, 48, 48]
 
 fig, ax = plt.subplots(figsize=(5.4, 4.0))
 ax.plot(rates2, edge, marker="o", linestyle="-", color=BLUE,
@@ -147,6 +151,8 @@ ax.plot(rates2, centre, marker="^", linestyle="--", color=ORANGE,
         label="Datacenter (dedicated)", linewidth=1.8)
 ax.plot(rates2, shared, marker="s", linestyle=":", color=GREEN,
         label="Datacenter, shared (1M/day)", linewidth=1.8)
+ax.plot(rates2, shared_edge, marker="D", linestyle=(0, (3, 1, 1, 1)),
+        color=VERMILLION, label="Edge, shared (1M/day)", linewidth=1.8)
 ax.set_xscale("log")
 ax.set_yscale("log")
 ax.set_xlabel("Requests per day")

@@ -42,6 +42,19 @@ against the printed values; run it from the repository root.
 queue-wait and contention-guard output that shows whether a cell ran on an
 otherwise idle card.
 
+## Stated exception: the raw grid series is not redistributed
+
+`data/results/carbon_intensity_hourly_means.csv` holds the 24 hour-of-day
+carbon-intensity means that Section 4.8 and Figure 5 are built from. The
+underlying 32-day hourly generation-mix series is not archived here: it comes
+from EPIAS under that operator's terms of use.
+`scripts/experiments/epias_fetch.py` regenerates it from an EPIAS account.
+
+The consequence is that the hour-of-day figures (348.9 and 411.9 gCO2eq/kWh,
+the 1.18x ratio, the 7.0% and 15.3% savings) can be checked from this deposit,
+while the raw 32-day range (269-464 gCO2eq/kWh, 1.72x, and the 42% figure)
+cannot be without such an account.
+
 ## Stated exception: no per-sample power traces
 
 The sampler accumulates its 10 Hz readings in memory and writes out the
