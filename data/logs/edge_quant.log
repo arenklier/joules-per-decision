@@ -1,0 +1,42 @@
+edge card: NVIDIA RTX A2000 (nvidia-smi index 1), 120 tasks, batch 8, cap 48
+torch sees: NVIDIA RTX A2000
+    [cold idle]   5.64 W (sd 0.10, n=184)
+
+=== 1.5B bf16 ===
+    loaded in 10.1 s, 2.88 GiB resident
+    [resident idle]   8.10 W (sd 5.43, n=185)
+    [cell pre]   5.60 W (sd 0.02, n=110)
+    [cell post]   5.77 W (sd 0.03, n=110)
+     15.97 J/req   2.08 req/s  drift 0.17 W
+    accuracy  38.3%   41.7 J per correct decision
+
+=== 1.5B nf4 ===
+    loaded in 8.3 s, 1.08 GiB resident
+    [resident idle]   6.15 W (sd 0.72, n=185)
+    [cell pre]   5.90 W (sd 0.03, n=110)
+    [cell post]   5.97 W (sd 0.03, n=111)
+     16.95 J/req   1.84 req/s  drift 0.07 W
+    accuracy  30.8%   55.0 J per correct decision
+
+=== 3B nf4 ===
+    loaded in 10.8 s, 1.93 GiB resident
+    [resident idle]   6.48 W (sd 1.39, n=184)
+    [cell pre]   6.03 W (sd 0.03, n=110)
+    [cell post]   6.05 W (sd 0.01, n=111)
+     28.44 J/req   1.67 req/s  drift 0.03 W
+    accuracy  46.7%   61.0 J per correct decision
+
+=== 7B nf4 ===
+    loaded in 43.8 s, 5.21 GiB resident
+    [resident idle]   6.94 W (sd 3.86, n=183)
+    [cell pre]   6.08 W (sd 0.01, n=111)
+    [cell post]   7.60 W (sd 0.14, n=110)
+    262.73 J/req   0.19 req/s  drift 1.52 W
+    accuracy  52.5%   500.4 J per correct decision
+
+=== EDGE QUANTIZATION ===
+config           VRAM  accuracy      J/req    J/correct      idle
+1.5B bf16       2.88G     38.3%      15.97         41.7    8.10W
+1.5B nf4        1.08G     30.8%      16.95         55.0    6.15W
+3B nf4          1.93G     46.7%      28.44         61.0    6.48W
+7B nf4          5.21G     52.5%     262.73        500.4    6.94W

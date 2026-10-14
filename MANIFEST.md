@@ -58,6 +58,32 @@ loop's control flow against a stubbed model, so the termination bound and the
 check's blindness to a wrong-but-well-formed answer are asserted rather than
 described.
 
+### Quantization on the edge card
+
+| File | Backs |
+|---|---|
+| `edge_quant_result.json` | four configurations on the RTX A2000 in one session: 1.5B at bfloat16 and at NF4, then 3B and 7B at NF4, with per-task grading, per-cell energy and resident idle draw |
+
+All four share one cold-idle baseline and one thermal history, and none of
+them carries a drift flag. They run at batch 8, which is what the 7B model
+leaves room for in 6 GB; the comparison between configurations is therefore
+internally consistent, and its absolute energies are not comparable with the
+batch-32 figures elsewhere in the paper.
+
+Two things about accuracy in this file need stating rather than discovering.
+The 1.5B bfloat16 cell reads 38.3% where the paper reports 39.2%, one task of
+120. The cause is batch composition under left padding, which is testable and
+was tested: the same configuration reads 40.8% at batch 40 and 38.3% at batch
+8, so this task set is sensitive to grouping at roughly a point and a half
+either way. And this arm runs transformers 5.2 on torch 2.5.1, since
+bitsandbytes needs a newer stack than the published edge measurements used.
+
+`scripts/analysis/edge_quant_analysis.py` recomputes the placement cost model
+of Table 10 from these numbers. The resident idle floors here sit below the
+published 12.24 W because the card idles cooler in this session, 5.64 W cold,
+so the rows measured here should be read against each other rather than
+against the published row.
+
 ### Serving framework
 
 vLLM cannot be installed beside the stack the rest of this paper was measured

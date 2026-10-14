@@ -1,0 +1,3001 @@
+{
+ "card": "NVIDIA RTX A2000",
+ "gpu_idx": 1,
+ "cold_idle": 5.6418478260869565,
+ "batch": 8,
+ "gen_cap": 48,
+ "results": [
+  {
+   "repo": "Qwen/Qwen2.5-1.5B-Instruct",
+   "params_b": 1.5,
+   "precision": "bf16",
+   "card": "NVIDIA RTX A2000",
+   "cold_idle_w": 5.6418478260869565,
+   "load_s": 10.147260665893555,
+   "vram_gib": 2.8753929138183594,
+   "resident_idle_w": 8.09854054054054,
+   "resident_minus_cold_w": 2.4566927144535837,
+   "energy": {
+    "dur_s": 11.513715505599976,
+    "n_samples": 107,
+    "batch": 8,
+    "repeats": 3,
+    "net_j": 383.36901530361183,
+    "j_per_req": 15.973708970983827,
+    "req_per_s": 2.0844704724836234,
+    "pre_w": 5.5969999999999995,
+    "post_w": 5.770272727272728,
+    "drift_w": 0.17327272727272813,
+    "dirty": false
+   },
+   "acc": 0.38333333333333336,
+   "rows": [
+    {
+     "task": "subnet_00",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.79.31.255"
+    },
+    {
+     "task": "subnet_01",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.230.0.0"
+    },
+    {
+     "task": "subnet_02",
+     "family": "subnet",
+     "correct": true,
+     "got": "10.108.31.254"
+    },
+    {
+     "task": "subnet_03",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.145.255.255"
+    },
+    {
+     "task": "subnet_04",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.134.2.0"
+    },
+    {
+     "task": "subnet_05",
+     "family": "subnet",
+     "correct": false,
+     "got": "254.32.0.254"
+    },
+    {
+     "task": "subnet_06",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.90.3.0"
+    },
+    {
+     "task": "subnet_07",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.11.30.255"
+    },
+    {
+     "task": "subnet_08",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.106.7.254"
+    },
+    {
+     "task": "subnet_09",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.241.7.254"
+    },
+    {
+     "task": "subnet_10",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.194.0.254"
+    },
+    {
+     "task": "subnet_11",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.176.31.254"
+    },
+    {
+     "task": "subnet_12",
+     "family": "subnet",
+     "correct": true,
+     "got": "10.176.31.255"
+    },
+    {
+     "task": "subnet_13",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.235.0.128"
+    },
+    {
+     "task": "subnet_14",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.109.7.254"
+    },
+    {
+     "task": "subnet_15",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.225.31.254"
+    },
+    {
+     "task": "subnet_16",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.37.254.254"
+    },
+    {
+     "task": "subnet_17",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.95.3.0"
+    },
+    {
+     "task": "subnet_18",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.173.4.0"
+    },
+    {
+     "task": "subnet_19",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.51.31.255"
+    },
+    {
+     "task": "subnet_20",
+     "family": "subnet",
+     "correct": false,
+     "got": "255.255.252.0"
+    },
+    {
+     "task": "subnet_21",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.232.7.255"
+    },
+    {
+     "task": "subnet_22",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.193.7.254"
+    },
+    {
+     "task": "subnet_23",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.96.31.254"
+    },
+    {
+     "task": "subnet_24",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.68.31.254"
+    },
+    {
+     "task": "subnet_25",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.134.5.254"
+    },
+    {
+     "task": "subnet_26",
+     "family": "subnet",
+     "correct": false,
+     "got": "254.255.255.254"
+    },
+    {
+     "task": "subnet_27",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.119.31.255"
+    },
+    {
+     "task": "subnet_28",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.187.254.255"
+    },
+    {
+     "task": "subnet_29",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.239.255.255"
+    },
+    {
+     "task": "subnet_30",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.146.254.255"
+    },
+    {
+     "task": "subnet_31",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.11.3.0"
+    },
+    {
+     "task": "subnet_32",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.102.3.0"
+    },
+    {
+     "task": "subnet_33",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.254.255.255"
+    },
+    {
+     "task": "subnet_34",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.57.254.254"
+    },
+    {
+     "task": "subnet_35",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.119.7.254"
+    },
+    {
+     "task": "subnet_36",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.140.63.255"
+    },
+    {
+     "task": "subnet_37",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.47.3.0"
+    },
+    {
+     "task": "subnet_38",
+     "family": "subnet",
+     "correct": false,
+     "got": "255.255.252.255"
+    },
+    {
+     "task": "subnet_39",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.254.0.0"
+    },
+    {
+     "task": "acl_00",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_01",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_02",
+     "family": "acl",
+     "correct": false,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_03",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_04",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_05",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_06",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_07",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_08",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_09",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_10",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_11",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_12",
+     "family": "acl",
+     "correct": false,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_13",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_14",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_15",
+     "family": "acl",
+     "correct": false,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_16",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_17",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_18",
+     "family": "acl",
+     "correct": false,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_19",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_20",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_21",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_22",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_23",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_24",
+     "family": "acl",
+     "correct": false,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_25",
+     "family": "acl",
+     "correct": false,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_26",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_27",
+     "family": "acl",
+     "correct": false,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_28",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_29",
+     "family": "acl",
+     "correct": false,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_30",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_31",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_32",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_33",
+     "family": "acl",
+     "correct": false,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_34",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_35",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_36",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_37",
+     "family": "acl",
+     "correct": false,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_38",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_39",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "bgp_00",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_01",
+     "family": "bgp",
+     "correct": false,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_02",
+     "family": "bgp",
+     "correct": true,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_03",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_04",
+     "family": "bgp",
+     "correct": true,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_05",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_06",
+     "family": "bgp",
+     "correct": true,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_07",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_08",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_09",
+     "family": "bgp",
+     "correct": false,
+     "got": "R4"
+    },
+    {
+     "task": "bgp_10",
+     "family": "bgp",
+     "correct": true,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_11",
+     "family": "bgp",
+     "correct": false,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_12",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_13",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_14",
+     "family": "bgp",
+     "correct": true,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_15",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_16",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_17",
+     "family": "bgp",
+     "correct": false,
+     "got": "R4"
+    },
+    {
+     "task": "bgp_18",
+     "family": "bgp",
+     "correct": false,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_19",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_20",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_21",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_22",
+     "family": "bgp",
+     "correct": false,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_23",
+     "family": "bgp",
+     "correct": true,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_24",
+     "family": "bgp",
+     "correct": true,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_25",
+     "family": "bgp",
+     "correct": false,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_26",
+     "family": "bgp",
+     "correct": false,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_27",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_28",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_29",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_30",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_31",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_32",
+     "family": "bgp",
+     "correct": true,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_33",
+     "family": "bgp",
+     "correct": false,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_34",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_35",
+     "family": "bgp",
+     "correct": false,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_36",
+     "family": "bgp",
+     "correct": false,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_37",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_38",
+     "family": "bgp",
+     "correct": false,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_39",
+     "family": "bgp",
+     "correct": false,
+     "got": "R3"
+    }
+   ],
+   "j_per_correct": 41.670545141696934
+  },
+  {
+   "repo": "Qwen/Qwen2.5-1.5B-Instruct",
+   "params_b": 1.5,
+   "precision": "nf4",
+   "card": "NVIDIA RTX A2000",
+   "cold_idle_w": 5.6418478260869565,
+   "load_s": 8.25638723373413,
+   "vram_gib": 1.0758581161499023,
+   "resident_idle_w": 6.154810810810812,
+   "resident_minus_cold_w": 0.5129629847238553,
+   "energy": {
+    "dur_s": 13.013365745544434,
+    "n_samples": 120,
+    "batch": 8,
+    "repeats": 3,
+    "net_j": 406.77829975021973,
+    "j_per_req": 16.949095822925823,
+    "req_per_s": 1.8442577016032315,
+    "pre_w": 5.902454545454545,
+    "post_w": 5.97027027027027,
+    "drift_w": 0.06781572481572518,
+    "dirty": false
+   },
+   "acc": 0.30833333333333335,
+   "rows": [
+    {
+     "task": "subnet_00",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.79.31.255"
+    },
+    {
+     "task": "subnet_01",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.227.32.0"
+    },
+    {
+     "task": "subnet_02",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.108.7.254"
+    },
+    {
+     "task": "subnet_03",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.139.15.254"
+    },
+    {
+     "task": "subnet_04",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.134.0.254"
+    },
+    {
+     "task": "subnet_05",
+     "family": "subnet",
+     "correct": false,
+     "got": "202.64.0.0"
+    },
+    {
+     "task": "subnet_06",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.90.3.0"
+    },
+    {
+     "task": "subnet_07",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.11.30.255"
+    },
+    {
+     "task": "subnet_08",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.106.7.254"
+    },
+    {
+     "task": "subnet_09",
+     "family": "subnet",
+     "correct": false,
+     "got": "239.254.255.254"
+    },
+    {
+     "task": "subnet_10",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.181.7.0"
+    },
+    {
+     "task": "subnet_11",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.176.254.254"
+    },
+    {
+     "task": "subnet_12",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.176.0.254"
+    },
+    {
+     "task": "subnet_13",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.235.0.40"
+    },
+    {
+     "task": "subnet_14",
+     "family": "subnet",
+     "correct": true,
+     "got": "10.109.31.254"
+    },
+    {
+     "task": "subnet_15",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.225.3.0"
+    },
+    {
+     "task": "subnet_16",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.37.5.0"
+    },
+    {
+     "task": "subnet_17",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.95.3.0"
+    },
+    {
+     "task": "subnet_18",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.173.4.0"
+    },
+    {
+     "task": "subnet_19",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.51.0.254"
+    },
+    {
+     "task": "subnet_20",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.244.0.255"
+    },
+    {
+     "task": "subnet_21",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.232.0.254"
+    },
+    {
+     "task": "subnet_22",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.193.7.0"
+    },
+    {
+     "task": "subnet_23",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.96.31.254"
+    },
+    {
+     "task": "subnet_24",
+     "family": "subnet",
+     "correct": false,
+     "got": "32765"
+    },
+    {
+     "task": "subnet_25",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.134.7.254"
+    },
+    {
+     "task": "subnet_26",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.39.7.254"
+    },
+    {
+     "task": "subnet_27",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.119.0.255"
+    },
+    {
+     "task": "subnet_28",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.187.0.254"
+    },
+    {
+     "task": "subnet_29",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.240.0.31"
+    },
+    {
+     "task": "subnet_30",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.146.7.255"
+    },
+    {
+     "task": "subnet_31",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.11.0.64"
+    },
+    {
+     "task": "subnet_32",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.102.32.0"
+    },
+    {
+     "task": "subnet_33",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.197.0.255"
+    },
+    {
+     "task": "subnet_34",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.57.0.254"
+    },
+    {
+     "task": "subnet_35",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.119.7.0"
+    },
+    {
+     "task": "subnet_36",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.140.31.255"
+    },
+    {
+     "task": "subnet_37",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.47.32.0/25"
+    },
+    {
+     "task": "subnet_38",
+     "family": "subnet",
+     "correct": true,
+     "got": "10.222.31.255"
+    },
+    {
+     "task": "subnet_39",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.250.3.0"
+    },
+    {
+     "task": "acl_00",
+     "family": "acl",
+     "correct": false,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_01",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_02",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_03",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_04",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_05",
+     "family": "acl",
+     "correct": false,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_06",
+     "family": "acl",
+     "correct": false,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_07",
+     "family": "acl",
+     "correct": false,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_08",
+     "family": "acl",
+     "correct": false,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_09",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_10",
+     "family": "acl",
+     "correct": false,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_11",
+     "family": "acl",
+     "correct": false,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_12",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_13",
+     "family": "acl",
+     "correct": false,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_14",
+     "family": "acl",
+     "correct": false,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_15",
+     "family": "acl",
+     "correct": false,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_16",
+     "family": "acl",
+     "correct": false,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_17",
+     "family": "acl",
+     "correct": false,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_18",
+     "family": "acl",
+     "correct": false,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_19",
+     "family": "acl",
+     "correct": false,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_20",
+     "family": "acl",
+     "correct": false,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_21",
+     "family": "acl",
+     "correct": false,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_22",
+     "family": "acl",
+     "correct": false,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_23",
+     "family": "acl",
+     "correct": false,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_24",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_25",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_26",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_27",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_28",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_29",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_30",
+     "family": "acl",
+     "correct": false,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_31",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_32",
+     "family": "acl",
+     "correct": false,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_33",
+     "family": "acl",
+     "correct": false,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_34",
+     "family": "acl",
+     "correct": false,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_35",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_36",
+     "family": "acl",
+     "correct": false,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_37",
+     "family": "acl",
+     "correct": false,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_38",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_39",
+     "family": "acl",
+     "correct": false,
+     "got": "PERMIT"
+    },
+    {
+     "task": "bgp_00",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_01",
+     "family": "bgp",
+     "correct": false,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_02",
+     "family": "bgp",
+     "correct": true,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_03",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_04",
+     "family": "bgp",
+     "correct": true,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_05",
+     "family": "bgp",
+     "correct": false,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_06",
+     "family": "bgp",
+     "correct": true,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_07",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_08",
+     "family": "bgp",
+     "correct": true,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_09",
+     "family": "bgp",
+     "correct": true,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_10",
+     "family": "bgp",
+     "correct": true,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_11",
+     "family": "bgp",
+     "correct": false,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_12",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_13",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_14",
+     "family": "bgp",
+     "correct": true,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_15",
+     "family": "bgp",
+     "correct": true,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_16",
+     "family": "bgp",
+     "correct": true,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_17",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_18",
+     "family": "bgp",
+     "correct": false,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_19",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_20",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_21",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_22",
+     "family": "bgp",
+     "correct": false,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_23",
+     "family": "bgp",
+     "correct": true,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_24",
+     "family": "bgp",
+     "correct": true,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_25",
+     "family": "bgp",
+     "correct": true,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_26",
+     "family": "bgp",
+     "correct": false,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_27",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_28",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_29",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_30",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_31",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_32",
+     "family": "bgp",
+     "correct": true,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_33",
+     "family": "bgp",
+     "correct": false,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_34",
+     "family": "bgp",
+     "correct": true,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_35",
+     "family": "bgp",
+     "correct": false,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_36",
+     "family": "bgp",
+     "correct": false,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_37",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_38",
+     "family": "bgp",
+     "correct": false,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_39",
+     "family": "bgp",
+     "correct": false,
+     "got": "R3"
+    }
+   ],
+   "j_per_correct": 54.970040506786454
+  },
+  {
+   "repo": "Qwen/Qwen2.5-3B-Instruct",
+   "params_b": 3.0,
+   "precision": "nf4",
+   "card": "NVIDIA RTX A2000",
+   "cold_idle_w": 5.6418478260869565,
+   "load_s": 10.77309274673462,
+   "vram_gib": 1.9339447021484375,
+   "resident_idle_w": 6.480326086956521,
+   "resident_minus_cold_w": 0.8384782608695645,
+   "energy": {
+    "dur_s": 14.369760990142822,
+    "n_samples": 132,
+    "batch": 8,
+    "repeats": 3,
+    "net_j": 682.6521242219318,
+    "j_per_req": 28.443838509247158,
+    "req_per_s": 1.6701739170514527,
+    "pre_w": 6.027454545454545,
+    "post_w": 6.054054054054054,
+    "drift_w": 0.026599508599509214,
+    "dirty": false
+   },
+   "acc": 0.4666666666666667,
+   "rows": [
+    {
+     "task": "subnet_00",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.79.126.255"
+    },
+    {
+     "task": "subnet_01",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.227.64.0"
+    },
+    {
+     "task": "subnet_02",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.108.65.254"
+    },
+    {
+     "task": "subnet_03",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.139.151.255"
+    },
+    {
+     "task": "subnet_04",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.135.64.0"
+    },
+    {
+     "task": "subnet_05",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.253.255.254"
+    },
+    {
+     "task": "subnet_06",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.92.0.0"
+    },
+    {
+     "task": "subnet_07",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.11.126.255"
+    },
+    {
+     "task": "subnet_08",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.106.38.254"
+    },
+    {
+     "task": "subnet_09",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.241.151.254"
+    },
+    {
+     "task": "subnet_10",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.181.30.254"
+    },
+    {
+     "task": "subnet_11",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.176.32.254"
+    },
+    {
+     "task": "subnet_12",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.176.32.255"
+    },
+    {
+     "task": "subnet_13",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.235.192.0"
+    },
+    {
+     "task": "subnet_14",
+     "family": "subnet",
+     "correct": true,
+     "got": "10.109.31.254"
+    },
+    {
+     "task": "subnet_15",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.225.62.254"
+    },
+    {
+     "task": "subnet_16",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.37.32.254"
+    },
+    {
+     "task": "subnet_17",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.95.48.0"
+    },
+    {
+     "task": "subnet_18",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.173.35.254"
+    },
+    {
+     "task": "subnet_19",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.51.192.255"
+    },
+    {
+     "task": "subnet_20",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.244.15.255"
+    },
+    {
+     "task": "subnet_21",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.231.255.255"
+    },
+    {
+     "task": "subnet_22",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.193.35.254"
+    },
+    {
+     "task": "subnet_23",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.96.151.254"
+    },
+    {
+     "task": "subnet_24",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.68.254.254"
+    },
+    {
+     "task": "subnet_25",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.135.255.254"
+    },
+    {
+     "task": "subnet_26",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.39.63.255"
+    },
+    {
+     "task": "subnet_27",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.119.31.255"
+    },
+    {
+     "task": "subnet_28",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.187.15.255"
+    },
+    {
+     "task": "subnet_29",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.255.255.255"
+    },
+    {
+     "task": "subnet_30",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.255.255.255"
+    },
+    {
+     "task": "subnet_31",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.11.63.24"
+    },
+    {
+     "task": "subnet_32",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.102.64.0"
+    },
+    {
+     "task": "subnet_33",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.197.151.255"
+    },
+    {
+     "task": "subnet_34",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.57.191.255"
+    },
+    {
+     "task": "subnet_35",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.119.254.254"
+    },
+    {
+     "task": "subnet_36",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.141.255.255"
+    },
+    {
+     "task": "subnet_37",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.47.192.0"
+    },
+    {
+     "task": "subnet_38",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.222.151.255"
+    },
+    {
+     "task": "subnet_39",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.250.64.0"
+    },
+    {
+     "task": "acl_00",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_01",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_02",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_03",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_04",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_05",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_06",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_07",
+     "family": "acl",
+     "correct": false,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_08",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_09",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_10",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_11",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_12",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_13",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_14",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_15",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_16",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_17",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_18",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_19",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_20",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_21",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_22",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_23",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_24",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_25",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_26",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_27",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_28",
+     "family": "acl",
+     "correct": false,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_29",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_30",
+     "family": "acl",
+     "correct": false,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_31",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_32",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_33",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_34",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_35",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_36",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_37",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_38",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_39",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "bgp_00",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_01",
+     "family": "bgp",
+     "correct": false,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_02",
+     "family": "bgp",
+     "correct": false,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_03",
+     "family": "bgp",
+     "correct": false,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_04",
+     "family": "bgp",
+     "correct": false,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_05",
+     "family": "bgp",
+     "correct": false,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_06",
+     "family": "bgp",
+     "correct": false,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_07",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_08",
+     "family": "bgp",
+     "correct": true,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_09",
+     "family": "bgp",
+     "correct": false,
+     "got": "R4"
+    },
+    {
+     "task": "bgp_10",
+     "family": "bgp",
+     "correct": false,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_11",
+     "family": "bgp",
+     "correct": false,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_12",
+     "family": "bgp",
+     "correct": false,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_13",
+     "family": "bgp",
+     "correct": false,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_14",
+     "family": "bgp",
+     "correct": false,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_15",
+     "family": "bgp",
+     "correct": true,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_16",
+     "family": "bgp",
+     "correct": true,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_17",
+     "family": "bgp",
+     "correct": true,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_18",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_19",
+     "family": "bgp",
+     "correct": false,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_20",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_21",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_22",
+     "family": "bgp",
+     "correct": true,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_23",
+     "family": "bgp",
+     "correct": false,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_24",
+     "family": "bgp",
+     "correct": false,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_25",
+     "family": "bgp",
+     "correct": true,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_26",
+     "family": "bgp",
+     "correct": false,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_27",
+     "family": "bgp",
+     "correct": false,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_28",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_29",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_30",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_31",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_32",
+     "family": "bgp",
+     "correct": true,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_33",
+     "family": "bgp",
+     "correct": false,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_34",
+     "family": "bgp",
+     "correct": true,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_35",
+     "family": "bgp",
+     "correct": false,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_36",
+     "family": "bgp",
+     "correct": true,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_37",
+     "family": "bgp",
+     "correct": true,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_38",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_39",
+     "family": "bgp",
+     "correct": false,
+     "got": "R3"
+    }
+   ],
+   "j_per_correct": 60.95108251981534
+  },
+  {
+   "repo": "Qwen/Qwen2.5-7B-Instruct",
+   "params_b": 7.0,
+   "precision": "nf4",
+   "card": "NVIDIA RTX A2000",
+   "cold_idle_w": 5.6418478260869565,
+   "load_s": 43.84683704376221,
+   "vram_gib": 5.21201229095459,
+   "resident_idle_w": 6.9375956284153,
+   "resident_minus_cold_w": 1.2957478023283437,
+   "energy": {
+    "dur_s": 126.30932474136353,
+    "n_samples": 1161,
+    "batch": 8,
+    "repeats": 3,
+    "net_j": 6305.406200838372,
+    "j_per_req": 262.7252583682655,
+    "req_per_s": 0.19000972453255882,
+    "pre_w": 6.081801801801802,
+    "post_w": 7.6036363636363635,
+    "drift_w": 1.5218345618345612,
+    "dirty": false
+   },
+   "acc": 0.525,
+   "rows": [
+    {
+     "task": "subnet_00",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.79.31.255"
+    },
+    {
+     "task": "subnet_01",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.227.64.0"
+    },
+    {
+     "task": "subnet_02",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.108.3.254"
+    },
+    {
+     "task": "subnet_03",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.139.63.255"
+    },
+    {
+     "task": "subnet_04",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.134.8.0"
+    },
+    {
+     "task": "subnet_05",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.252.31.255"
+    },
+    {
+     "task": "subnet_06",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.90.4.0"
+    },
+    {
+     "task": "subnet_07",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.11.31.255"
+    },
+    {
+     "task": "subnet_08",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.106.13.254"
+    },
+    {
+     "task": "subnet_09",
+     "family": "subnet",
+     "correct": true,
+     "got": "10.241.11.254"
+    },
+    {
+     "task": "subnet_10",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.181.3.254"
+    },
+    {
+     "task": "subnet_11",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.176.3.254"
+    },
+    {
+     "task": "subnet_12",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.176.3.255"
+    },
+    {
+     "task": "subnet_13",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.235.6.0"
+    },
+    {
+     "task": "subnet_14",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.109.4.254"
+    },
+    {
+     "task": "subnet_15",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.225.7.254"
+    },
+    {
+     "task": "subnet_16",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.37.3.254"
+    },
+    {
+     "task": "subnet_17",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.95.48.0"
+    },
+    {
+     "task": "subnet_18",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.173.3.254"
+    },
+    {
+     "task": "subnet_19",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.51.63.255"
+    },
+    {
+     "task": "subnet_20",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.244.159.255"
+    },
+    {
+     "task": "subnet_21",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.232.31.255"
+    },
+    {
+     "task": "subnet_22",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.193.7.254"
+    },
+    {
+     "task": "subnet_23",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.96.31.254"
+    },
+    {
+     "task": "subnet_24",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.68.3.254"
+    },
+    {
+     "task": "subnet_25",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.134.8.254"
+    },
+    {
+     "task": "subnet_26",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.39.15.255"
+    },
+    {
+     "task": "subnet_27",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.119.22.255"
+    },
+    {
+     "task": "subnet_28",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.187.4.255"
+    },
+    {
+     "task": "subnet_29",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.240.31.255"
+    },
+    {
+     "task": "subnet_30",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.146.31.255"
+    },
+    {
+     "task": "subnet_31",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.11.96.0"
+    },
+    {
+     "task": "subnet_32",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.102.32.0"
+    },
+    {
+     "task": "subnet_33",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.197.17.255"
+    },
+    {
+     "task": "subnet_34",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.57.126.255"
+    },
+    {
+     "task": "subnet_35",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.119.9.254"
+    },
+    {
+     "task": "subnet_36",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.140.8.255"
+    },
+    {
+     "task": "subnet_37",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.47.8.0"
+    },
+    {
+     "task": "subnet_38",
+     "family": "subnet",
+     "correct": true,
+     "got": "10.222.31.255"
+    },
+    {
+     "task": "subnet_39",
+     "family": "subnet",
+     "correct": false,
+     "got": "10.250.64.0"
+    },
+    {
+     "task": "acl_00",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_01",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_02",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_03",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_04",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_05",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_06",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_07",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_08",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_09",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_10",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_11",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_12",
+     "family": "acl",
+     "correct": false,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_13",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_14",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_15",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_16",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_17",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_18",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_19",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_20",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_21",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_22",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_23",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_24",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_25",
+     "family": "acl",
+     "correct": false,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_26",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_27",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_28",
+     "family": "acl",
+     "correct": false,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_29",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_30",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_31",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_32",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_33",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_34",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_35",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_36",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_37",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "acl_38",
+     "family": "acl",
+     "correct": true,
+     "got": "PERMIT"
+    },
+    {
+     "task": "acl_39",
+     "family": "acl",
+     "correct": true,
+     "got": "DENY"
+    },
+    {
+     "task": "bgp_00",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_01",
+     "family": "bgp",
+     "correct": false,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_02",
+     "family": "bgp",
+     "correct": false,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_03",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_04",
+     "family": "bgp",
+     "correct": true,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_05",
+     "family": "bgp",
+     "correct": false,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_06",
+     "family": "bgp",
+     "correct": true,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_07",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_08",
+     "family": "bgp",
+     "correct": true,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_09",
+     "family": "bgp",
+     "correct": false,
+     "got": "R4"
+    },
+    {
+     "task": "bgp_10",
+     "family": "bgp",
+     "correct": true,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_11",
+     "family": "bgp",
+     "correct": false,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_12",
+     "family": "bgp",
+     "correct": true,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_13",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_14",
+     "family": "bgp",
+     "correct": false,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_15",
+     "family": "bgp",
+     "correct": true,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_16",
+     "family": "bgp",
+     "correct": true,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_17",
+     "family": "bgp",
+     "correct": true,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_18",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_19",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_20",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_21",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_22",
+     "family": "bgp",
+     "correct": false,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_23",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_24",
+     "family": "bgp",
+     "correct": true,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_25",
+     "family": "bgp",
+     "correct": false,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_26",
+     "family": "bgp",
+     "correct": false,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_27",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_28",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_29",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_30",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_31",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_32",
+     "family": "bgp",
+     "correct": true,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_33",
+     "family": "bgp",
+     "correct": true,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_34",
+     "family": "bgp",
+     "correct": true,
+     "got": "R3"
+    },
+    {
+     "task": "bgp_35",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_36",
+     "family": "bgp",
+     "correct": false,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_37",
+     "family": "bgp",
+     "correct": false,
+     "got": "R1"
+    },
+    {
+     "task": "bgp_38",
+     "family": "bgp",
+     "correct": true,
+     "got": "R2"
+    },
+    {
+     "task": "bgp_39",
+     "family": "bgp",
+     "correct": true,
+     "got": "R4"
+    }
+   ],
+   "j_per_correct": 500.4290635586009
+  }
+ ]
+}
