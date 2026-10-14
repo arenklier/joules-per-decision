@@ -58,6 +58,42 @@ loop's control flow against a stubbed model, so the termination bound and the
 check's blindness to a wrong-but-well-formed answer are asserted rather than
 described.
 
+### Serving framework
+
+vLLM cannot be installed beside the stack the rest of this paper was measured
+on, so the comparison runs in three arms and the middle one is what makes it
+readable.
+
+| File | Backs |
+|---|---|
+| `vllm_sweep_hf_result.json` | the published batching sweep's code path re-run on vLLM's own stack: transformers 5.17, torch 2.13, CUDA 13 |
+| `vllm_sweep_vllm_result.json` | vLLM 0.31 on that same stack, concurrency 1 to 256, from a cold card |
+| `vllm_sweep_vllm_rerun.json` | the same sweep from a hot card, which is what settles the drift flags |
+
+Published Table 7 against `vllm_sweep_hf_result.json` isolates the software
+stack; `vllm_sweep_hf_result.json` against `vllm_sweep_vllm_result.json`
+isolates continuous batching. Reading vLLM against the published table alone
+would credit the framework with whatever the newer kernels did.
+`scripts/analysis/vllm_analysis.py` performs both subtractions and recomputes
+the idle-share economics from them.
+
+Two configuration decisions are recorded in the result files rather than left
+implicit. vLLM runs with its FlashInfer sampler disabled, because that
+component JIT-compiles kernels against the host toolkit and this host's nvcc
+is CUDA 12.0 while the wheel requires 12.4 or newer; decoding throughout is
+greedy, which makes the sampler an argmax either way. And energy at small
+batch sizes comes from a replay window rather than per-repeat windows: a
+single 128-token generation runs about 1.2 s under vLLM, which is twelve
+samples at 10 Hz and under the integration floor of Section 3.4, whose own
+remedy is to replay inside one longer window and divide. Each row names which
+window its energy came from.
+
+Every cell in both sweeps carries a drift flag, because a sweep heats the card
+and the 5 W guard is the naive one Section 3.4's second pitfall warns about.
+The two vLLM sweeps, run from a cold and a hot card, agree to between 0.3 and
+8.7 per cent with a median of 2.5, which is the same order as the 0.3 to 4.2
+per cent the published 14B sweep reproduced to.
+
 ### External benchmark
 
 | File | Backs |

@@ -1,0 +1,72 @@
+arm=hf, 120 prompts, 128 forced tokens, 3 repeats
+waiting for an exclusive GPU ...
+    [cold idle]   81.74 W (sd 0.31, n=200)
+
+=== Qwen/Qwen2.5-3B-Instruct (3B) [hf] ===
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:   9%|▉         | 39/434 [00:00<00:01, 351.84it/s]Loading weights:  23%|██▎       | 100/434 [00:00<00:00, 483.60it/s]Loading weights:  37%|███▋      | 160/434 [00:00<00:00, 523.44it/s]Loading weights:  51%|█████     | 220/434 [00:00<00:00, 543.92it/s]Loading weights:  65%|██████▍   | 280/434 [00:00<00:00, 555.55it/s]Loading weights:  78%|███████▊  | 340/434 [00:00<00:00, 561.16it/s]Loading weights:  92%|█████████▏| 400/434 [00:00<00:00, 567.45it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 550.37it/s]
+    [resident idle]   81.93 W (sd 0.56, n=200)
+    weights resident cost +0.19 W over cold
+    [b=1 pre]   81.86 W (sd 0.57, n=100)
+    [b=1 post]   89.38 W (sd 19.23, n=100)
+    batch   1:   2.70 s     226.79 J/req     0.37 req/s  drift  7.5 W  energy from replay (0/3 windows over floor)  DIRTY
+    [b=2 pre]   82.43 W (sd 1.92, n=100)
+    [b=2 post]   88.09 W (sd 15.68, n=100)
+    batch   2:   3.16 s     104.83 J/req     0.63 req/s  drift  5.7 W  energy from replay (3/3 windows over floor)  DIRTY
+    [b=4 pre]   82.32 W (sd 0.26, n=100)
+    [b=4 post]   86.59 W (sd 14.63, n=100)
+    batch   4:   3.21 s      60.73 J/req     1.25 req/s  drift  4.3 W  energy from replay (3/3 windows over floor)
+    [b=8 pre]   83.42 W (sd 4.76, n=100)
+    [b=8 post]   89.00 W (sd 17.94, n=100)
+    batch   8:   3.23 s      32.42 J/req     2.48 req/s  drift  5.6 W  energy from replay (3/3 windows over floor)  DIRTY
+    [b=16 pre]   81.50 W (sd 1.47, n=100)
+    [b=16 post]   89.37 W (sd 21.43, n=100)
+    batch  16:   3.26 s      19.54 J/req     4.91 req/s  drift  7.9 W  energy from replay (3/3 windows over floor)  DIRTY
+    [b=32 pre]   81.90 W (sd 2.00, n=100)
+    [b=32 post]   92.23 W (sd 26.29, n=100)
+    batch  32:   3.42 s      12.71 J/req     9.36 req/s  drift 10.3 W  energy from replay (3/3 windows over floor)  DIRTY
+    [b=64 pre]   83.81 W (sd 8.00, n=100)
+    [b=64 post]  102.59 W (sd 47.97, n=100)
+    batch  64:   4.61 s      14.45 J/req    13.88 req/s  drift 18.8 W  energy from replay (3/3 windows over floor)  DIRTY
+
+=== Qwen/Qwen2.5-14B-Instruct (14B) [hf] ===
+Loading weights:   0%|          | 0/579 [00:00<?, ?it/s]Loading weights:   0%|          | 1/579 [00:00<01:22,  7.03it/s]Loading weights:   0%|          | 2/579 [00:00<01:31,  6.30it/s]Loading weights:   3%|▎         | 18/579 [00:00<00:10, 56.10it/s]Loading weights:   7%|▋         | 41/579 [00:00<00:05, 106.82it/s]Loading weights:  11%|█         | 62/579 [00:00<00:03, 137.76it/s]Loading weights:  13%|█▎        | 78/579 [00:00<00:03, 137.27it/s]Loading weights:  17%|█▋        | 101/579 [00:00<00:03, 157.73it/s]Loading weights:  21%|██▏       | 124/579 [00:00<00:02, 170.59it/s]Loading weights:  25%|██▍       | 142/579 [00:01<00:02, 170.20it/s]Loading weights:  28%|██▊       | 161/579 [00:01<00:02, 172.65it/s]Loading weights:  32%|███▏      | 184/579 [00:01<00:02, 173.57it/s]Loading weights:  35%|███▌      | 203/579 [00:01<00:02, 176.97it/s]Loading weights:  38%|███▊      | 222/579 [00:01<00:02, 173.45it/s]Loading weights:  42%|████▏     | 245/579 [00:01<00:01, 182.75it/s]Loading weights:  46%|████▋     | 268/579 [00:01<00:01, 188.09it/s]Loading weights:  50%|████▉     | 287/579 [00:01<00:01, 181.97it/s]Loading weights:  53%|█████▎    | 306/579 [00:02<00:01, 176.18it/s]Loading weights:  57%|█████▋    | 329/579 [00:02<00:01, 183.83it/s]Loading weights:  60%|██████    | 348/579 [00:02<00:01, 185.08it/s]Loading weights:  63%|██████▎   | 367/579 [00:02<00:01, 178.54it/s]Loading weights:  67%|██████▋   | 388/579 [00:02<00:01, 180.41it/s]Loading weights:  71%|███████   | 412/579 [00:02<00:00, 189.47it/s]Loading weights:  74%|███████▍  | 431/579 [00:02<00:00, 184.65it/s]Loading weights:  78%|███████▊  | 450/579 [00:02<00:00, 174.72it/s]Loading weights:  82%|████████▏ | 473/579 [00:02<00:00, 183.22it/s]Loading weights:  85%|████████▌ | 495/579 [00:03<00:00, 178.49it/s]Loading weights:  89%|████████▉ | 518/579 [00:03<00:00, 192.08it/s]Loading weights:  93%|█████████▎| 538/579 [00:03<00:00, 182.87it/s]Loading weights:  96%|█████████▌| 557/579 [00:03<00:00, 179.91it/s]Loading weights: 100%|██████████| 579/579 [00:03<00:00, 166.66it/s]
+    [resident idle]   83.12 W (sd 0.47, n=200)
+    weights resident cost +1.38 W over cold
+    [b=1 pre]   83.62 W (sd 3.96, n=100)
+    [b=1 post]   96.30 W (sd 33.95, n=100)
+    batch   1:   5.57 s     919.21 J/req     0.18 req/s  drift 12.7 W  energy from replay (3/3 windows over floor)  DIRTY
+    [b=2 pre]   84.32 W (sd 3.50, n=99)
+    [b=2 post]   96.59 W (sd 32.68, n=100)
+    batch   2:   6.09 s     439.38 J/req     0.33 req/s  drift 12.3 W  energy from replay (3/3 windows over floor)  DIRTY
+    [b=4 pre]   84.81 W (sd 3.87, n=100)
+    [b=4 post]   96.47 W (sd 33.12, n=100)
+    batch   4:   6.26 s     226.26 J/req     0.64 req/s  drift 11.7 W  energy from replay (3/3 windows over floor)  DIRTY
+    [b=8 pre]   84.07 W (sd 3.52, n=100)
+    [b=8 post]   96.72 W (sd 34.07, n=100)
+    batch   8:   6.56 s     122.24 J/req     1.22 req/s  drift 12.6 W  energy from replay (3/3 windows over floor)  DIRTY
+    [b=16 pre]   84.04 W (sd 3.45, n=100)
+    [b=16 post]   98.19 W (sd 35.29, n=100)
+    batch  16:   7.10 s      73.83 J/req     2.25 req/s  drift 14.1 W  energy from replay (3/3 windows over floor)  DIRTY
+    [b=32 pre]   85.17 W (sd 4.30, n=100)
+    [b=32 post]  102.74 W (sd 45.20, n=100)
+    batch  32:   8.25 s      50.78 J/req     3.88 req/s  drift 17.6 W  energy from replay (3/3 windows over floor)  DIRTY
+    [b=64 pre]   86.43 W (sd 5.34, n=100)
+    [b=64 post]  108.55 W (sd 51.44, n=100)
+    batch  64:  17.52 s      59.69 J/req     3.65 req/s  drift 22.1 W  energy from replay (3/3 windows over floor)  DIRTY
+
+=== HF SWEEP ===
+model     batch      J/req     req/s     J/token
+3B            1     226.79      0.37      1.7718
+3B            2     104.83      0.63      0.8190
+3B            4      60.73      1.25      0.4744
+3B            8      32.42      2.48      0.2533
+3B           16      19.54      4.91      0.1527
+3B           32      12.71      9.36      0.0993
+3B           64      14.45     13.88      0.1129
+14B           1     919.21      0.18      7.1813
+14B           2     439.38      0.33      3.4327
+14B           4     226.26      0.64      1.7677
+14B           8     122.24      1.22      0.9550
+14B          16      73.83      2.25      0.5768
+14B          32      50.78      3.88      0.3967
+14B          64      59.69      3.65      0.4664
