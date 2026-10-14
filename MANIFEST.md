@@ -5,6 +5,24 @@ stated exception recorded at the end. `scripts/validation/verify_deposit.py`
 recomputes the paper's headline statistics from these files and compares them
 against the printed values; run it from the repository root.
 
+## Validation scripts, and what each needs
+
+Run from the repository root.
+
+| Script | Needs | Checks |
+|---|---|---|
+| `scripts/validation/verify_deposit.py` | nothing | recomputes the paper's headline statistics from the result files |
+| `scripts/validation/oracle_validate.py` | nothing | re-derives all 120 ground truths by a second implementation; prints 120/120 |
+| `scripts/validation/agent_loop_selfcheck.py` | nothing | the agentic loop's control flow against a stubbed model |
+| `scripts/experiments/validators.py` | nothing | what the loop's ground-truth-free checks can and cannot see |
+| `scripts/validation/netarena_selfcheck.py` | **a NetArena checkout** | grades NetArena's reference solution with NetArena's own harness |
+
+The last one is the exception. It executes the benchmark authors' grading
+code, which is theirs and is not redistributed here, so it exits with an
+explanation rather than a result unless `NETARENA` points at a checkout:
+
+    NETARENA=/path/to/NetArena/app-malt python scripts/validation/netarena_selfcheck.py
+
 ## Result files
 
 ### Accuracy and prompting condition

@@ -24,8 +24,16 @@ Agreement is not proof the task set is well designed. It only rules out the
 specific failure where the generator and the grader share one bug.
 """
 import ipaddress
+import os
 import re
 import sys
+
+# The measurement host keeps every script in one flat directory; the repository
+# puts the generator next door. Look in both so this runs from either.
+_HERE = os.path.dirname(os.path.abspath(__file__))
+for _p in (os.path.join(os.path.dirname(_HERE), "experiments"), _HERE):
+    if os.path.isdir(_p) and _p not in sys.path:
+        sys.path.insert(0, _p)
 
 from tasks_net import build, GENERATORS
 
