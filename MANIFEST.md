@@ -28,6 +28,36 @@ against the printed values; run it from the repository root.
 | `edge_result.json`, `edge_result2.json` | the RTX A2000 edge arm |
 | `placement_result.json` | the edge-versus-datacenter placement model |
 
+### Agentic iteration
+
+| File | Backs |
+|---|---|
+| `agent_loop_result.json` | Table 6 and Figure 3: the single-shot, repair, self-review and crossed arms at four model sizes, merged across the two sessions below |
+| `agent_loop_result_run1.json` | the first session, all four sizes, retained with its contaminated 7B cells intact |
+| `agent_loop_7b_result.json` | the clean 7B re-measurement that replaced them |
+| `agent_pilot_result.json` | the 48-task pilot that sized the experiment and caught two design faults before the full run |
+
+A foreign job entered the GPU while 7B was being measured in the first
+session. The contention guard of Section 3.4 flagged it: the self-review cell
+closed 247 W above its opening baseline and read 174.50 J per task against
+92.59 J on clean re-measurement, and the crossed cell returned a negative net
+energy, because its own opening baseline had been taken while the intruder was
+resident. Those cells were discarded, not corrected.
+`scripts/analysis/merge_agent_runs.py` performs the substitution and writes
+every discarded cell and its reason into the merged file's `provenance` field.
+The two sessions agree where both are clean, which is what licenses splicing
+them: 7B single shot read 45.02 against 44.52 J and 7B repair 62.63 against
+62.76 J, a 1.1% and 0.2% difference across independent sessions.
+
+`scripts/experiments/validators.py` holds the ground-truth-free checks the
+repair loop runs on, and its `selftest()` establishes what they can and cannot
+see: across the 120 tasks no correct answer is rejected, malformed output is
+caught in every family, and an answer that is well formed and merely wrong is
+caught in none. `scripts/validation/agent_loop_selfcheck.py` exercises the
+loop's control flow against a stubbed model, so the termination bound and the
+check's blindness to a wrong-but-well-formed answer are asserted rather than
+described.
+
 ### External benchmark
 
 | File | Backs |

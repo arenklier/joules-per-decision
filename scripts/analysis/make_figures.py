@@ -52,14 +52,12 @@ ax.scatter(params[~is_qwen], j_per_tok[~is_qwen], marker="^", s=55,
            color=ORANGE, edgecolors="black", linewidths=0.5,
            label="other families", zorder=3)
 xs = np.linspace(1, 15, 100)
-ax.plot(xs, 0.42 * xs ** 1.08 / xs, linestyle="--", color="gray", linewidth=1,
-        zorder=1)  # placeholder overwritten below with a proper power fit
-# proper least-squares power-law fit through the data (not forced through origin
-# in log-log space, matches the ~1.08 exponent reported in the text)
+# Least-squares power-law fit in log-log space. The exponent in the legend is
+# recomputed from the data rather than hard-coded, so the figure cannot drift
+# away from the value Section 4.1 reports.
 logp, logj = np.log(params), np.log(j_per_tok)
 b, loga = np.polyfit(logp, logj, 1)
 fit_j = np.exp(loga) * xs ** b
-ax.lines[-1].remove()
 ax.plot(xs, fit_j, linestyle="--", color="gray", linewidth=1.2, zorder=1,
         label=f"power-law fit ($\\propto P^{{{b:.2f}}}$)")
 ax.set_xscale("log")
