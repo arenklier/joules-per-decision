@@ -6,15 +6,20 @@ message: >-
   If you use this software or these measurements, please cite both this
   deposit and the paper it accompanies.
 type: software
-doi: 10.5281/zenodo.22666117
+# The concept DOI. It always resolves to the newest version, which is what a
+# reader following a citation wants; 10.5281/zenodo.22666117 is the version
+# DOI of v1.0.0 and will never move off it.
+doi: 10.5281/zenodo.22666116
 repository-code: 'https://github.com/arenklier/joules-per-decision'
 license: MIT
-version: v1.0.0
+version: v1.2.0
+date-released: '2026-10-28'
 authors:
   - given-names: Ayhan
     family-names: Renklier
     affiliation: Kayseri University
     email: ayhan@kayseri.edu.tr
+    orcid: 'https://orcid.org/0000-0002-9164-4615'
   - given-names: Hasan
     family-names: Mercan
     affiliation: Kayseri University
@@ -25,4 +30,5 @@ keywords:
   - edge-cloud placement
   - carbon-aware scheduling
   - GPU power profiling
+  - agentic iteration
   - NetOps

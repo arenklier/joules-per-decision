@@ -56,7 +56,7 @@ explanation rather than a result unless `NETARENA` points at a checkout:
 | `agent_pilot_result.json` | the 48-task pilot that sized the experiment and caught two design faults before the full run |
 
 A foreign job entered the GPU while 7B was being measured in the first
-session. The contention guard of Section 3.4 flagged it: the self-review cell
+session. The contention guard of Section 3.2 flagged it: the self-review cell
 closed 247 W above its opening baseline and read 174.50 J per task against
 92.59 J on clean re-measurement, and the crossed cell returned a negative net
 energy, because its own opening baseline had been taken while the intruder was
@@ -97,7 +97,7 @@ either way. And this arm runs transformers 5.2 on torch 2.5.1, since
 bitsandbytes needs a newer stack than the published edge measurements used.
 
 `scripts/analysis/edge_quant_analysis.py` recomputes the placement cost model
-of Table 10 from these numbers. The resident idle floors here sit below the
+of Table 12 from these numbers. The resident idle floors here sit below the
 published 12.24 W because the card idles cooler in this session, 5.64 W cold,
 so the rows measured here should be read against each other rather than
 against the published row.
@@ -114,7 +114,7 @@ readable.
 | `vllm_sweep_vllm_result.json` | vLLM 0.31 on that same stack, concurrency 1 to 256, from a cold card |
 | `vllm_sweep_vllm_rerun.json` | the same sweep from a hot card, which is what settles the drift flags |
 
-Published Table 7 against `vllm_sweep_hf_result.json` isolates the software
+Published Table 8 against `vllm_sweep_hf_result.json` isolates the software
 stack; `vllm_sweep_hf_result.json` against `vllm_sweep_vllm_result.json`
 isolates continuous batching. Reading vLLM against the published table alone
 would credit the framework with whatever the newer kernels did.
@@ -128,12 +128,12 @@ is CUDA 12.0 while the wheel requires 12.4 or newer; decoding throughout is
 greedy, which makes the sampler an argmax either way. And energy at small
 batch sizes comes from a replay window rather than per-repeat windows: a
 single 128-token generation runs about 1.2 s under vLLM, which is twelve
-samples at 10 Hz and under the integration floor of Section 3.4, whose own
+samples at 10 Hz and under the integration floor of Section 3.2, whose own
 remedy is to replay inside one longer window and divide. Each row names which
 window its energy came from.
 
 Every cell in both sweeps carries a drift flag, because a sweep heats the card
-and the 5 W guard is the naive one Section 3.4's second pitfall warns about.
+and the 5 W guard is the naive one Section 3.2's second pitfall warns about.
 The two vLLM sweeps, run from a cold and a hot card, agree to between 0.3 and
 8.7 per cent with a median of 2.5, which is the same order as the 0.3 to 4.2
 per cent the published 14B sweep reproduced to.
@@ -155,7 +155,7 @@ otherwise idle card.
 ## Stated exception: the raw grid series is not redistributed
 
 `data/results/carbon_intensity_hourly_means.csv` holds the 24 hour-of-day
-carbon-intensity means that Section 4.8 and Figure 5 are built from. The
+carbon-intensity means that Section 4.11 and Figure 6 are built from. The
 underlying 32-day hourly generation-mix series is not archived here: it comes
 from EPIAS under that operator's terms of use.
 `scripts/experiments/epias_fetch.py` regenerates it from an EPIAS account.

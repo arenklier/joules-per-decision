@@ -12,12 +12,18 @@ marker and a linestyle so nothing depends on colour.
     python scripts/analysis/make_agent_figure.py [agent_loop_result.json]
 """
 import json
+import os
 import sys
 
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker
+
+_HERE = os.path.dirname(os.path.abspath(__file__))
+FIGURES = os.path.join(os.path.dirname(os.path.dirname(_HERE)),
+                       "figures")
+
 
 plt.rcParams.update({
     "font.family": "serif",
@@ -47,7 +53,8 @@ LABEL = {"single": "single shot",
          "reflect+repair": "self-review + repair"}
 
 
-def main(path, out="fig_agent_loop.pdf"):
+def main(path, out=None):
+    out = out or os.path.join(FIGURES, "fig_agent_loop.pdf")
     d = json.load(open(path))
     res = sorted(d["results"], key=lambda e: e["params_b"])
     params = [e["params_b"] for e in res]

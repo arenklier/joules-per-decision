@@ -1,11 +1,13 @@
 {
   "title": "Joules per Decision: Measuring the Energy Cost of LLM Agents in Network Operations — measurement code and results",
   "upload_type": "software",
-  "description": "<p>Measurement code, per-task result files, and analysis scripts accompanying the paper <em>Joules per Decision: Measuring the Energy Cost of LLM Agents in Network Operations</em>.</p><p>GPU board power is sampled at 10 Hz with a streaming <code>nvidia-smi</code> process and integrated over wall-clock time, net of a per-cell idle baseline, while four Qwen2.5 sizes perform subnet arithmetic, ACL rule evaluation, and BGP best-path selection, on a datacenter accelerator and an edge-class card, and on the NetArena benchmark. The deposit includes the power sampler, the task generator and its grading function, the independent ground-truth re-derivation, the grading-rule audit, the statistical analyses, and the figure-generation code.</p><p>All energy figures are GPU board power only; host, power-supply, cooling, and facility overheads are outside the instrument.</p>",
+  "version": "v1.2.0",
+  "description": "<p>Measurement code, per-task result files, run logs, and analysis scripts accompanying the paper <em>Joules per Decision: Measuring the Energy Cost of LLM Agents in Network Operations</em>.</p><p>GPU board power is sampled at 10&nbsp;Hz with a streaming <code>nvidia-smi</code> process and integrated over wall-clock time, net of a per-cell idle baseline, while four Qwen2.5 sizes perform subnet arithmetic, ACL rule evaluation, and BGP best-path selection, on a datacenter accelerator and an edge-class card, and on the NetArena benchmark.</p><p>The deposit includes the power sampler, the task generator and its grading function, an independent re-derivation of all 120 ground truths, the grading-rule audit, the statistical analyses, and the figure-generation code. <code>scripts/validation/verify_deposit.py</code> recomputes the paper's headline statistics from the result files and compares them against the printed values.</p><p>This version adds three experiments that the first deposit predates: the cost of agentic iteration, measured with a validator derived from the prompt rather than from the ground truth, so that the loop is blind to correctness in the way a real deployment is; a three-arm serving-framework comparison that separates a newer software stack from vLLM's continuous batching instead of confounding them; and four-bit NF4 quantization on the edge card. Both runs of the serving sweep are kept, from a cold and a hot card, so the agreement quoted for the thermal-drift flags can be recomputed.</p><p>All energy figures are GPU board power only; host, power-supply, cooling, and facility overheads are outside the instrument.</p>",
   "creators": [
     {
       "name": "Renklier, Ayhan",
-      "affiliation": "Kayseri University"
+      "affiliation": "Kayseri University",
+      "orcid": "0000-0002-9164-4615"
     },
     {
       "name": "Mercan, Hasan",
@@ -20,7 +22,16 @@
     "carbon-aware scheduling",
     "GPU power profiling",
     "chain-of-thought",
+    "agentic iteration",
+    "quantization",
     "NetOps"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/arenklier/joules-per-decision",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
   ],
   "license": "mit",
   "access_right": "open"

@@ -1,18 +1,23 @@
 # Joules per Decision
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22666117.svg)](https://doi.org/10.5281/zenodo.22666117)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22666116.svg)](https://doi.org/10.5281/zenodo.22666116)
 
 Measurement code, raw results, and analysis scripts for *Joules per Decision:
 Measuring the Energy Cost of LLM Agents in Network Operations*.
 
-The archived, immutable copy is at
-[10.5281/zenodo.22666117](https://doi.org/10.5281/zenodo.22666117). Cite that
-rather than this branch, which can move.
+The archived copy is on Zenodo. Cite it rather than this branch, which can
+move. [10.5281/zenodo.22666116](https://doi.org/10.5281/zenodo.22666116) is
+the concept DOI and always resolves to the newest version; each version also
+carries its own DOI, which does not move, and `CITATION.cff` names the
+current one. Note that 10.5281/zenodo.22666117 is v1.0.0's version DOI and
+predates the agentic, serving-framework and quantization arms.
 
 The paper measures GPU board power while language models perform network
 operations tasks — subnet arithmetic, ACL rule evaluation, and BGP best-path
 selection — across four Qwen2.5 sizes on a datacenter accelerator and an
-edge-class card, and on NetArena, an externally maintained benchmark.
+edge-class card, and on NetArena, an externally maintained benchmark. It
+also prices the iteration an agentic loop adds, what a production serving
+framework changes, and what four-bit quantization does to the edge arm.
 
 ## What this repository is for
 
@@ -22,16 +27,21 @@ them than if they have to be taken on trust, which is why the sampler, the
 task generator, the grader, and the per-task result files are all here rather
 than only the plots.
 
-`MANIFEST.md` lists what is present and what is still outstanding. Read it
-before assuming a table can be reproduced from this deposit.
+`MANIFEST.md` lists what is present and what is still outstanding, which
+result file backs which table, and the two things this deposit deliberately
+does not redistribute. Read it before assuming a table can be reproduced from
+here. `CHANGELOG.md` says what each version added.
 
 ## Layout
 
 ```
 scripts/measurement/   power sampler, idle-baseline probes, energy scaling ladder
 scripts/experiments/   task generator, prompting conditions, batching and edge sweeps,
-                       NetArena runners, grid carbon-intensity fetch
-scripts/validation/    independent ground-truth re-derivation, grading-rule audit,
+                       the agentic loop and its ground-truth-free validators,
+                       the vLLM serving sweep, four-bit quantization on the edge
+                       card, NetArena runners, grid carbon-intensity fetch
+scripts/validation/    deposit verifier, independent ground-truth re-derivation,
+                       grading-rule audit, agent-loop control-flow self-check,
                        NetArena reference-solution self-check
 scripts/analysis/      statistics, placement model, figure generation
 data/results/          per-task and per-cell result files
@@ -75,11 +85,20 @@ two of them inverted a conclusion:
 
 ## Reproducing
 
-The scripts expect an NVIDIA GPU with `nvidia-smi`, PyTorch 2.4.1 (CUDA 12.1),
-and HuggingFace `transformers` 4.44.2. Models run in bfloat16 with sampling
-disabled. No serving framework is used, so there is no continuous batching and
-no cross-request prefix cache; batching is a padded batch passed to one
-`generate()` call.
+The scripts expect an NVIDIA GPU with `nvidia-smi`. Most of the paper runs
+on one stack — PyTorch 2.4.1 (CUDA 12.1) and HuggingFace `transformers`
+4.44.2, bfloat16, sampling disabled — where no serving framework is used, so
+there is no continuous batching and no cross-request prefix cache; batching
+is a padded batch passed to one `generate()` call.
+
+Two arms depart from it, and the deposit keeps them separate for that reason.
+The serving sweep (`scripts/experiments/vllm_sweep.py`) runs on transformers
+5.17, PyTorch 2.13 and CUDA 13, in a `hf` arm and a vLLM 0.31 arm, so the
+software stack and the framework can be subtracted from each other instead of
+confounded. The quantized edge arm (`scripts/experiments/edge_quant.py`) runs
+transformers 5.2 on PyTorch 2.5.1 with `bitsandbytes` NF4, which is what the
+quantizer requires. Energies from different stacks are comparable only within
+the arm that measured them; `MANIFEST.md` says which is which.
 
 Hardware in the paper: NVIDIA L40S (46 GB) as the datacenter proxy, NVIDIA RTX
 A2000 (6 GB) as the gateway-class edge proxy, driver 580.173.02.

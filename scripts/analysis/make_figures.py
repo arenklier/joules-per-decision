@@ -9,6 +9,8 @@ where fill is doing semantic work (which cells survive correction), so it uses
 one hue plus a hatch rather than a colour scale, to avoid implying that a
 non-significant cell is a bad one.
 """
+import os
+
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -26,7 +28,10 @@ plt.rcParams.update({
     "figure.dpi": 150,
 })
 
-OUT = "."
+_HERE = os.path.dirname(os.path.abspath(__file__))
+FIGURES = os.path.join(os.path.dirname(os.path.dirname(_HERE)),
+                       "figures")
+OUT = FIGURES
 
 # Okabe-Ito qualitative palette: separable under deuteranopia, protanopia and
 # tritanopia, and distinct in greyscale by luminance.
