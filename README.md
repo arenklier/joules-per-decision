@@ -5,8 +5,7 @@
 Measurement code, raw results, and analysis scripts for *Joules per Decision:
 Measuring the Energy Cost of LLM Agents in Network Operations*.
 
-The archived copy is on Zenodo. Cite it rather than this branch, which can
-move. [10.5281/zenodo.22666116](https://doi.org/10.5281/zenodo.22666116) is
+The archived copy on Zenodo is the citable one. [10.5281/zenodo.22666116](https://doi.org/10.5281/zenodo.22666116) is
 the concept DOI and always resolves to the newest version; each version also
 carries its own DOI, which does not move, and `CITATION.cff` names the
 current one. Note that 10.5281/zenodo.22666117 is v1.0.0's version DOI and

@@ -10,7 +10,6 @@ type: software
 # reader following a citation wants; 10.5281/zenodo.22666117 is the version
 # DOI of v1.0.0 and will never move off it.
 doi: 10.5281/zenodo.22666116
-repository-code: 'https://github.com/arenklier/joules-per-decision'
 license: MIT
 version: v1.2.0
 date-released: '2026-10-28'

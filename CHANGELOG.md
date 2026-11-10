@@ -85,6 +85,11 @@ then 3B and 7B at NF4.
   a NetArena checkout and gave a traceback instead of saying so.
 - `CITATION.cff` now carries the concept DOI rather than v1.0.0's version
   DOI, and both authors' ORCIDs.
+- **The development repository is private.** It was public for v1.0.0 and
+  v1.1.0, so this deposit used to point at it from `CITATION.cff`,
+  `.zenodo.json` and the README. A link into a private repository is a 404
+  for everyone reading this archive, which is worse than no link, so those
+  pointers are removed. This archive is the whole of what is published.
 
 ### Note on v1.1.0
 

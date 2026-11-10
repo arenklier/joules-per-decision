@@ -26,13 +26,6 @@
     "quantization",
     "NetOps"
   ],
-  "related_identifiers": [
-    {
-      "identifier": "https://github.com/arenklier/joules-per-decision",
-      "relation": "isSupplementTo",
-      "scheme": "url"
-    }
-  ],
   "license": "mit",
   "access_right": "open"
 }
